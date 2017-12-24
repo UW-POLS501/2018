@@ -1,23 +1,68 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "POLS 501: Advanced Political Research Design and Analysis"
-theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
+theme = "pols-501"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
+    schedule = ""
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/UW-POLS501/2018"
+    name = "Schedule"
+    url = "/schedule/"
 
 [params]
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
+
+    [params.instructor]
+      name = "Jeffrey B. Arnold"
+      title = "Assistant Professor, Political Science; Core Faculty, CSSS"
+      email = "jrnold@uw.edu"
+      url = "https://jrnold.com"
+      [params.instructor.officeHours]
+        time = ""
+        room = "Smith 221B"
+
+    [params.ta]
+      name = "Calvin Garner"
+      title = "Graduate Student, Political Science"
+      email = "chgarner@uw.edu"
+      url = "https://www.polisci.washington.edu/people/calvin-garner"
+      [params.ta.officeHours]
+        time = ""
+        room = ""
+
+    [params.course]
+      title = "Advanced Political Research Design and Analysis"
+      number = "POLS/CS&SS 501"
+      institution = "University of Washington"
+      term = "Winter"
+      year = "2018"
+
+    mailing_lists = [
+      "pols501a_wi18@uw.edu",
+      "csss501a_wi18@uw.edu"
+    ]
+
+    [params.class]
+      startTime = "2018-01-09T16:30:00-08:00"
+      endTime = "2018-01-09T19:20:00-08:00"
+      [params.class.room]
+        building = "Savery"
+        number = "109"
+        url = "https://www.washington.edu/maps/#!/sav"
+
+
+    [params.lab]
+      startTime = "2018-01-05T13:30:00-08:00"
+      endTime = "2018-01-05T15:20:00-08:00"
+      [params.lab.room]
+        building = "Savery"
+        number = "109"
+        url = "https://www.washington.edu/maps/#!/sav"
+
+
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
@@ -28,9 +73,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     MathJaxCDN = "//cdn.bootcss.com"
     MathJaxVersion = "2.7.1"
 
+    # Bootstrap options
+    useBootstrap = true
+
     [params.logo]
     url = "logo.png"
     width = 50
     height = 50
     alt = "Logo"
-
