@@ -79,18 +79,16 @@ For this course, grades on the 4.0 scale have the following interpretation:
 ## Textbooks
 
 - Wickham, Hadley, and Garrett Grolemund. 2016. [R for Data Science](http://r4ds.had.co.nz/). O'Reilly Media.
-- Imai, Kosuke. 2017. *A First Course in Quantitative Social Science.* Princeton University Press. Forthcoming. Draft available on Canvas.
-- Bailey, Michael A. 2015. *Real Stats: Using Econometrics for Political Science and Public Policy*. Oxford University Press.
-- Diez, David M., Christopher D. Barr, and Mine Çetinkaya-Rundel. 2015. [OpenIntro Statistics](https://www.openintro.org/stat/textbook.php). 3rd ed.
+- Imai, Kosuke. 2017. *A First Course in Quantitative Social Science.* Princeton University Press.
 
 *R for Data Science* will be relied upon for teaching R, while *QSS* will be relied upon for concepts in data analysis and statistics, and political science examples. *OpenIntro Statistics* provides supplementary statistical information. *Real Stats* will be provide supplementary information on regression and causal inference towards the end of the course, but it will be primarily used in the following course, POLS 503.
 
-The primary text for R, *R for Data Science*, uses [tidyverse](https://github.com/tidyverse/tidyverse), a set of R packages not included in R by default. 
+The primary text for R, *R for Data Science*, uses [tidyverse](https://github.com/tidyverse/tidyverse), a set of R packages not included in R by default.
 I have written solutions to the exercises and some additional notes for *R4DS*.
 These are available at [jrnold/e4qf](https://jrnold.github.io/e4qf/).
 
-However, the primary statistical text, *QSS*, relies upon the base R functionality, and uses different functions than those in *R4DS*. 
-So, I have written (am writing) equivalent tidyverse R code to replace the code examples 
+However, the primary statistical text, *QSS*, relies upon the base R functionality, and uses different functions than those in *R4DS*.
+So, I have written (am writing) equivalent tidyverse R code to replace the code examples
 
 - [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/)
 
