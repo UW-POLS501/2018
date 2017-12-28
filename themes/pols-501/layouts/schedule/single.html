@@ -11,20 +11,20 @@
 
         {{ with .class }}
         <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>Class</small> </h5>
-        <strong>Topics:</strong> {{- .topics -}}
+        <strong>Topics:</strong> {{- .topics | markdownify -}}
         <ul>
           {{ range .readings }}
-          <li>{{ . }}</li>
+          <li>{{ . | markdownify }}</li>
           {{ end }}
         </ul>
         {{ end}}
 
         {{ with .lab }}
         <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>Lab</small> </h5>
-        <strong>Topics:</strong> {{- .topics -}}
+        <strong>Topics:</strong> {{ .topics | markdownify }}
         <ul>
           {{ range .readings }}
-          <li>{{ . }}</li>
+          <li>{{ . | markdownify }}</li>
           {{ end }}
         </ul>
         {{ end}}
