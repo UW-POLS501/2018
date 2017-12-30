@@ -30,11 +30,9 @@
 
 {{ partial "header_bootstrap.html" . }}
 {{ partial "header_fontawesome.html" . }}
-<!--
-<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="all">
-}}
--->
+
+<link rel="stylesheet" href="{{ "css/pols501.css" | relURL }}" media="all">
+
 {{ range .Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | relURL }}">
 {{ end }}

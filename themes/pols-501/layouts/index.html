@@ -39,7 +39,9 @@
       </div>
     </div>
 
-
+    {{ if .Site.Params.inprogress }}
+    <button type="button" class="btn">This syllabus is still in progres.</button>
+    {{ end }}
 
     <div class="container">
       <article class="article">

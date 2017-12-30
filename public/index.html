@@ -28,6 +28,8 @@
 <script defer src="/fontawesome/js/fontawesome-all.js"></script>
 
 
+<link rel="stylesheet" href="/css/pols501.css" media="all">
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
@@ -38,7 +40,7 @@
       <header class="header">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 
-  <a class="navbar-brand" href="/"> </a>
+  <a class="navbar-brand" href="/">POLS 501 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -97,7 +99,9 @@
       </div>
     </div>
 
-
+    
+    <button type="button" class="btn">This syllabus is still in progres.</button>
+    
 
     <div class="container">
       <article class="article">
@@ -122,62 +126,69 @@
 
           
 
-<h1 id="office-hours">Office Hours</h1>
+<h1 id="overview">Overview</h1>
 
-<p>Instructions for Jeff&rsquo;s office hours:</p>
+<p>This course is the first of a two-quarter sequence for Ph.D. students in political political science introductory methods sequence.
+Students are introduced to the full stack of skills needed to conduct modern social science data analysis including data visualization, data wrangling, programming for data analysis, reproducible research, probability and statistical inference, linear regression, and causal inference.
+Students will learn these skills while applying it to their own research problem.
+The objective of this course is to provide students with an hands-on introduction and overview of modern social science data analysis and a base skills to pursue further studies and research in quantitative methods.
+The next course in the sequence, POLS 503, covers linear models and causal inference methods in more detail.</p>
+
+<h2 id="course-goals-and-learning-learning-objectives">Course Goals and Learning Learning Objectives</h2>
+
+<p>By the end of the course students will be able to</p>
 
 <ol>
-<li><p>Sign up for a 30-minute slot using the Google Calendar appointments link which I emailed.</p></li>
-
-<li><p>Email me 24 hours prior to your appointment with what you would like to discuss.</p></li>
+<li>Complete a research project demonstrating mastery of statistical data analysis from exploratory analysis to inference to modeling</li>
+<li>Visualize data and statistical models using R</li>
+<li>Import and clean tabular data for use in statistical analysis using R</li>
+<li>Write clean, reusable, and reliable R code using current best practices</li>
+<li>Produce reproducible research using literate programming (R Markdown), version control (git and GitHub), and current best practices</li>
+<li>Explain the difference between descriptive, predictive, and causal stastical questions.</li>
+<li>Explain the difference between estimation and hypothesis testing
+that can be used to make causal claims from observational data, including</li>
+<li>Conduct, interpret, and communicate results from  t-tests, $\chi^2$ tests, and linear regression.</li>
+<li>Explain limitations of causal inference using observational data and methods for making causal inference with observational data: selection on observables, difference-in-difference, before-and-after, regression discontinuity.</li>
+<li>Feel empowered working with data</li>
 </ol>
-
-<p>These instructions will ensure that our time is efficiently spent and I can be of the most help to you.</p>
-
-<h1 id="communication">Communication</h1>
-
-<p>For questions about the course that would be of general interest to all students in the course, email the course mailing list, <a href="mailto:multi_pols501a_wi17@uw.edu">multi_pols501a_wi17@uw.edu</a>, rather than the individual instructors.
-Please reserve emails to individual instructors for individual concerns, such as your data analysis project or personal matters.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>The course is suitable for students with a large range of prior exposure to statistics and mathematics.
-No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.</p>
+<p>The course is suitable for students with a large range of prior exposure to statistics and mathematics. No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.<br />
+Since the background of students taking this course is heterogeneous, the topics and structure of the course is such that those with a wide background of technical skills are likely to find something useful in it.</p>
 
-<p>In the UW political science Ph.D. student methods sequence, POLS 501 is the first quantitative methods course.
-It focuses on data analysis, programming, and provides an introduction to probability and statistical inference.
-POLS 503 is the next course in the sequence, focuses on linear models for causal inference.</p>
+<h1 id="assignments-and-course-activities">Assignments and Course Activities</h1>
 
-<h1 id="evaluation">Evaluation</h1>
+<p>There are three main types of assignments for students</p>
 
-<h2 id="components">Components</h2>
+<ol>
+<li>Weekly homework: Learning data analysis requires practice. There will be weekly homework assignments. See the <a href="/assignments">assignments</a> page.</li>
+<li>Research project: Students will complete a research project. The expectation is that students will work on the project throughout the quarter and apply concepts and skills to that project soon after covering them in class. See the <a href="/project">project</a> page for more details.</li>
+<li>Reading Assignments: Students are expected to come to class prepared. I have chosen textbooks that are accessible, so we will not spend valuable class time summarizing assigned readings. Instead we will use class for more value-added learning activities. As part of that, before each class students will provide feedback and questions on the readings that will be used to guide class in-class discussion.</li>
+</ol>
 
-<h3 id="data-analysis-project-paper">Data analysis project paper</h3>
+<!--
 
-<p>Every student in this class will execute their own statistical data analysis of a research question.
-The results of this analysis will be presented as a paper due at the end of the course. See the <a href="/schedule/#finals-period">schedule</a> for the due date.</p>
+### Data analysis project paper
 
-<p>The purpose of this paper is for you to apply the quantitative methods used in this course to the real-world research problems that you will encounter in their research careers.
+Every student in this class will execute their own statistical data analysis of a research question.
+The results of this analysis will be presented as a paper due at the end of the course. See the [schedule](/schedule/#finals-period) for the due date.
+
+The purpose of this paper is for you to apply the quantitative methods used in this course to the real-world research problems that you will encounter in their research careers.
 The objective is to get you working with data on a research project as quickly as possible, even if it is a flawed project.
 So, due to the limited time in this course, it is not necessary for this paper to address an important research problem or a novel contribution to the literature.
 While those will not be criteria for the evaluation of this paper, you are encouraged to pursue those, as those ideas are what lead to publications.
-The paper will be evaluated on the appropriateness of the statistical methods applied to the data and question, and not the novelty or contribution of the question itself.</p>
+The paper will be evaluated on the appropriateness of the statistical methods applied to the data and question, and not the novelty or contribution of the question itself.
 
-<p>If you developed a research design for POLS 500, you may be able to use it in 501.
+If you developed a research design for POLS 500, you may be able to use it in 501.
 However you need to confirm that you will be able to assemble a dataset to test a specific research hypothesis within the time constraints of this course, because you will be using it throughout the course.
-If that seems unlikely, you will need to choose a different project.</p>
+If that seems unlikely, you will need to choose a different project.
 
-<h3 id="assignments">Assignments</h3>
+-->
 
-<p>There will be <em>approximately</em> weekly assignments.
-Except when otherwise indicated, assignments will be announced by the start of class on Tuesday, and will be due prior to the start of class the next week.
-Assignments can consist of data analysis, substantive questions.</p>
+<h2 id="evaluation">Evaluation</h2>
 
-<p>No late homework will accepted except in the case of a documented emergency.</p>
-
-<h2 id="scale">Scale</h2>
-
-<p>Students will be evaluated on the whole of their work in this course with an emphasis on the final paper.</p>
+<p>Students will be evaluated on the whole of their work in this course.</p>
 
 <p>For this course, grades on the 4.0 scale have the following interpretation:</p>
 
@@ -192,40 +203,34 @@ Assignments can consist of data analysis, substantive questions.</p>
 
 <h1 id="materials">Materials</h1>
 
-<h2 id="textbooks">Textbooks</h2>
-
-<ul>
-<li>Wickham, Hadley, and Garrett Grolemund. 2016. <a href="http://r4ds.had.co.nz/">R for Data Science</a>. O&rsquo;Reilly Media.</li>
-<li>Imai, Kosuke. 2017. <em>A First Course in Quantitative Social Science.</em> Princeton University Press.</li>
-</ul>
-
-<p><em>R for Data Science</em> will be relied upon for teaching R, while <em>QSS</em> will be relied upon for concepts in data analysis and statistics, and political science examples. <em>OpenIntro Statistics</em> provides supplementary statistical information. <em>Real Stats</em> will be provide supplementary information on regression and causal inference towards the end of the course, but it will be primarily used in the following course, POLS 503.</p>
-
-<p>The primary text for R, <em>R for Data Science</em>, uses <a href="https://github.com/tidyverse/tidyverse">tidyverse</a>, a set of R packages not included in R by default.
-I have written solutions to the exercises and some additional notes for <em>R4DS</em>.
-These are available at <a href="https://jrnold.github.io/e4qf/">jrnold/e4qf</a>.</p>
-
-<p>However, the primary statistical text, <em>QSS</em>, relies upon the base R functionality, and uses different functions than those in <em>R4DS</em>.
-So, I have written (am writing) equivalent tidyverse R code to replace the code examples</p>
-
-<ul>
-<li><a href="https://jrnold.github.io/qss-tidy/">QSS Tidyverse Code</a></li>
-</ul>
-
-<p>Additionally, readings may be supplemented by my course notes and lecture slides.</p>
-
-<ul>
-<li><a href="https://github.com/jrnold/intro-methods-notes">Introductory Methods Notes</a></li>
-</ul>
-
-<h2 id="software-and-computing">Software and Computing</h2>
+<h2 id="computational-tools">Computational Tools</h2>
 
 <p>This course will use <a href="https://www.r-project.org/">R</a>, which is a free and open-source programming language primarily used for statistics and data analysis. We will also use <a href="https://www.rstudio.com/">RStudio</a>, which is an easy-to-use interface to R.
 Instructions to install or upgrade R are <a href="install.html">here</a>.</p>
 
 <p>Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.</p>
 
-<h2 id="resources">Resources</h2>
+<h2 id="books">Books</h2>
+
+<p>This course will primarily rely on the following texts:</p>
+
+<ul>
+<li>Imai, Kosuke. 2017. <em>A First Course in Quantitative Social Science.</em> Princeton University Press.</li>
+<li>Wickham, Hadley, and Garrett Grolemund. 2016. <a href="http://r4ds.had.co.nz/">R for Data Science</a>. O&rsquo;Reilly Media. (free for everyone online)</li>
+</ul>
+
+<p>Additionally, these text are supplemented by</p>
+
+<ul>
+<li><a href="https://jrnold.github.io/qss-tidy/">QSS Tidyverse Code</a>. This course will use a set of R packages known as the <a href="https://www.tidyverse.org/">tidyverse</a>. This provides tidyverse code equivalent to that in the <em>QSS</em> text.</li>
+<li><a href="https://jrnold.github.io/e4qf/">R for Data Science Solutions</a>, to help you when working through <em>R for Data Science</em> solutions.</li>
+</ul>
+
+<p>There will be some additional readings as indicated in the <a href="/schedule">schedule</a>.</p>
+
+<h2 id="errata">Errata</h2>
+
+<h3 id="resources">Resources</h3>
 
 <p>Beyond what the teaching team can providing, there are several resources on campus that you can go for assistance with data, computing, and statistical problems:</p>
 
@@ -235,15 +240,15 @@ Instructions to install or upgrade R are <a href="install.html">here</a>.</p>
 <li><a href="http://escience.washington.edu/office-hours/">eScience Data Science Office Hours</a></li>
 </ul>
 
-<h2 id="license">License</h2>
+<h3 id="license">License</h3>
 
 <p>Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
-<p>The source for the materials of this course is on GitHub at <a href="https://github.com/UW-POLS501/pols_501_wi17">UW-POLS501/pols_501_wi17</a></p>
+<p>The source for the materials of this course is on GitHub at <a href="https://github.com/UW-POLS501/2018">UW-POLS501/2018</a>.</p>
 
-<h2 id="bugs">Bugs</h2>
+<h3 id="bugs">Bugs</h3>
 
-<p>If you find any typos or other issues in this page, any page in the site go to <a href="https://github.com/UW-POLS501/pols_501_wi17/issues">issues</a>, click on the &ldquo;New Issue&rdquo; button to create a new issue, and describe the problem.</p>
+<p>If you find any typos or other issues in this page, any page in the site go to <a href="https://github.com/UW-POLS501/2018/issues">issues</a>, click on the &ldquo;New Issue&rdquo; button to create a new issue, and describe the problem.</p>
 
         </div>
       </article>
@@ -267,6 +272,9 @@ Instructions to install or upgrade R are <a href="install.html">here</a>.</p>
       
 
       
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     </body>
   </div> 

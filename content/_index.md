@@ -1,38 +1,47 @@
 ---
-title: "UW POLS 501 2018"
-date: "2016-05-05T21:48:51-07:00"
+title: "POLS/CSSS 501 (2018)"
 ---
 
-# Office Hours
+# Overview
 
-Instructions for Jeff's office hours:
+This course is the first of a two-quarter sequence for Ph.D. students in political political science introductory methods sequence. 
+Students are introduced to the full stack of skills needed to conduct modern social science data analysis including data visualization, data wrangling, programming for data analysis, reproducible research, probability and statistical inference, linear regression, and causal inference.
+Students will learn these skills while applying it to their own research problem.
+The objective of this course is to provide students with an hands-on introduction and overview of modern social science data analysis and a base skills to pursue further studies and research in quantitative methods.
+The next course in the sequence, POLS 503, covers linear models and causal inference methods in more detail.
 
-1. Sign up for a 30-minute slot using the Google Calendar appointments link which I emailed.
+## Course Goals and Learning Learning Objectives
 
-2. Email me 24 hours prior to your appointment with what you would like to discuss.
+By the end of the course students will be able to 
 
-These instructions will ensure that our time is efficiently spent and I can be of the most help to you.
-
-
-# Communication
-
-For questions about the course that would be of general interest to all students in the course, email the course mailing list, [multi_pols501a_wi17@uw.edu](mailto:multi_pols501a_wi17@uw.edu), rather than the individual instructors.
-Please reserve emails to individual instructors for individual concerns, such as your data analysis project or personal matters.
+1. Complete a research project demonstrating mastery of statistical data analysis from exploratory analysis to inference to modeling
+1. Visualize data and statistical models using R
+2. Import and clean tabular data for use in statistical analysis using R
+3. Write clean, reusable, and reliable R code using current best practices
+4. Produce reproducible research using literate programming (R Markdown), version control (git and GitHub), and current best practices
+5. Explain the difference between descriptive, predictive, and causal stastical questions.
+7. Explain the difference between estimation and hypothesis testing
+that can be used to make causal claims from observational data, including 
+8. Conduct, interpret, and communicate results from  t-tests, $\chi^2$ tests, and linear regression.
+7. Explain limitations of causal inference using observational data and methods for making causal inference with observational data: selection on observables, difference-in-difference, before-and-after, regression discontinuity.
+10. Feel empowered working with data
 
 
 ## Prerequisites
 
-The course is suitable for students with a large range of prior exposure to statistics and mathematics.
-No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.
-
-In the UW political science Ph.D. student methods sequence, POLS 501 is the first quantitative methods course.
-It focuses on data analysis, programming, and provides an introduction to probability and statistical inference.
-POLS 503 is the next course in the sequence, focuses on linear models for causal inference.
+The course is suitable for students with a large range of prior exposure to statistics and mathematics. No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.  
+Since the background of students taking this course is heterogeneous, the topics and structure of the course is such that those with a wide background of technical skills are likely to find something useful in it.
 
 
-# Evaluation
+# Assignments and Course Activities
 
-## Components
+There are three main types of assignments for students
+
+1. Weekly homework: Learning data analysis requires practice. There will be weekly homework assignments. See the [assignments](/assignments) page.
+2. Research project: Students will complete a research project. The expectation is that students will work on the project throughout the quarter and apply concepts and skills to that project soon after covering them in class. See the [project](/project) page for more details.
+3. Reading Assignments: Students are expected to come to class prepared. I have chosen textbooks that are accessible, so we will not spend valuable class time summarizing assigned readings. Instead we will use class for more value-added learning activities. As part of that, before each class students will provide feedback and questions on the readings that will be used to guide class in-class discussion.
+
+<!--
 
 ### Data analysis project paper
 
@@ -49,18 +58,12 @@ If you developed a research design for POLS 500, you may be able to use it in 50
 However you need to confirm that you will be able to assemble a dataset to test a specific research hypothesis within the time constraints of this course, because you will be using it throughout the course.
 If that seems unlikely, you will need to choose a different project.
 
+-->
 
-### Assignments
 
-There will be *approximately* weekly assignments.
-Except when otherwise indicated, assignments will be announced by the start of class on Tuesday, and will be due prior to the start of class the next week.
-Assignments can consist of data analysis, substantive questions.
+## Evaluation
 
-No late homework will accepted except in the case of a documented emergency.
-
-## Scale
-
-Students will be evaluated on the whole of their work in this course with an emphasis on the final paper.
+Students will be evaluated on the whole of their work in this course.
 
 For this course, grades on the 4.0 scale have the following interpretation:
 
@@ -76,36 +79,31 @@ For this course, grades on the 4.0 scale have the following interpretation:
 
 # Materials
 
-## Textbooks
-
-- Wickham, Hadley, and Garrett Grolemund. 2016. [R for Data Science](http://r4ds.had.co.nz/). O'Reilly Media.
-- Imai, Kosuke. 2017. *A First Course in Quantitative Social Science.* Princeton University Press.
-
-*R for Data Science* will be relied upon for teaching R, while *QSS* will be relied upon for concepts in data analysis and statistics, and political science examples. *OpenIntro Statistics* provides supplementary statistical information. *Real Stats* will be provide supplementary information on regression and causal inference towards the end of the course, but it will be primarily used in the following course, POLS 503.
-
-The primary text for R, *R for Data Science*, uses [tidyverse](https://github.com/tidyverse/tidyverse), a set of R packages not included in R by default.
-I have written solutions to the exercises and some additional notes for *R4DS*.
-These are available at [jrnold/e4qf](https://jrnold.github.io/e4qf/).
-
-However, the primary statistical text, *QSS*, relies upon the base R functionality, and uses different functions than those in *R4DS*.
-So, I have written (am writing) equivalent tidyverse R code to replace the code examples
-
-- [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/)
-
-Additionally, readings may be supplemented by my course notes and lecture slides.
-
-- [Introductory Methods Notes](https://github.com/jrnold/intro-methods-notes)
-
-
-## Software and Computing
+## Computational Tools
 
 This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R.
 Instructions to install or upgrade R are [here](install.html).
 
 Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.
 
+## Books
 
-## Resources
+This course will primarily rely on the following texts:
+
+- Imai, Kosuke. 2017. *A First Course in Quantitative Social Science.* Princeton University Press.
+- Wickham, Hadley, and Garrett Grolemund. 2016. [R for Data Science](http://r4ds.had.co.nz/). O'Reilly Media. (free for everyone online)
+
+Additionally, these text are supplemented by
+
+- [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/). This course will use a set of R packages known as the [tidyverse](https://www.tidyverse.org/). This provides tidyverse code equivalent to that in the *QSS* text.
+- [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* solutions.
+
+There will be some additional readings as indicated in the [schedule](/schedule).
+
+
+## Errata
+
+### Resources
 
 Beyond what the teaching team can providing, there are several resources on campus that you can go for assistance with data, computing, and statistical problems:
 
@@ -114,12 +112,13 @@ Beyond what the teaching team can providing, there are several resources on camp
 - [eScience Data Science Office Hours](http://escience.washington.edu/office-hours/)
 
 
-## License
+### License
 
 Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-The source for the materials of this course is on GitHub at <a href="https://github.com/UW-POLS501/pols_501_wi17">UW-POLS501/pols_501_wi17</a>
+The source for the materials of this course is on GitHub at [UW-POLS501/2018](https://github.com/UW-POLS501/2018).
 
-## Bugs
+### Bugs
 
-If you find any typos or other issues in this page, any page in the site go to [issues](https://github.com/UW-POLS501/pols_501_wi17/issues), click on the "New Issue" button to create a new issue, and describe the problem.
+If you find any typos or other issues in this page, any page in the site go to [issues](https://github.com/UW-POLS501/2018/issues), click on the "New Issue" button to create a new issue, and describe the problem.
+

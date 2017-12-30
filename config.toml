@@ -6,14 +6,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
-    schedule = ""
+    page = "/:slug/"
 
 [[menu.main]]
     name = "Schedule"
     url = "/schedule/"
 
 [params]
+    inprogress = true
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
+    NavbarBrand = "POLS 501"
 
     [params.instructor]
       name = "Jeffrey B. Arnold"
@@ -61,8 +63,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         building = "Savery"
         number = "109"
         url = "https://www.washington.edu/maps/#!/sav"
-
-
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
