@@ -2,7 +2,8 @@
 title: "POLS/CSSS 501 (2018)"
 ---
 
-# Overview
+
+## Overview
 
 This course is the first of a two-quarter sequence for Ph.D. students in political political science introductory methods sequence. 
 Students are introduced to the full stack of skills needed to conduct modern social science data analysis including data visualization, data wrangling, programming for data analysis, reproducible research, probability and statistical inference, linear regression, and causal inference.
@@ -10,7 +11,8 @@ Students will learn these skills while applying it to their own research problem
 The objective of this course is to provide students with an hands-on introduction and overview of modern social science data analysis and a base skills to pursue further studies and research in quantitative methods.
 The next course in the sequence, POLS 503, covers linear models and causal inference methods in more detail.
 
-## Course Goals and Learning Learning Objectives
+
+### Course Goals
 
 By the end of the course students will be able to 
 
@@ -22,18 +24,36 @@ By the end of the course students will be able to
 5. Explain the difference between descriptive, predictive, and causal stastical questions.
 7. Explain the difference between estimation and hypothesis testing
 that can be used to make causal claims from observational data, including 
-8. Conduct, interpret, and communicate results from  t-tests, $\chi^2$ tests, and linear regression.
+8. Conduct, interpret, and communicate results from  t-tests, `$\chi^2$` tests, and linear regression.
 7. Explain limitations of causal inference using observational data and methods for making causal inference with observational data: selection on observables, difference-in-difference, before-and-after, regression discontinuity.
 10. Feel empowered working with data
 
 
-## Prerequisites
+### Prerequisites
+
+<!--
+The most important prerequisite is a willingness to work hard on possibly unfamiliar material.
+Learning statistical methods is like learning a new language, and it will take time and dedication to master its vocabulary, its grammar, and its idioms. However like studying languages, statistics yields to daily practice and consistent effort. And statistical program is similar.
+-->
 
 The course is suitable for students with a large range of prior exposure to statistics and mathematics. No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.  
 Since the background of students taking this course is heterogeneous, the topics and structure of the course is such that those with a wide background of technical skills are likely to find something useful in it.
 
+<!--
 
-# Assignments and Course Activities
+## Meeting structure
+
+Class meetings and labs
+
+- *Overview:*
+- *Discussion:*
+- *Project:*
+- *Preview:*
+
+-->
+
+
+## Assignments
 
 There are three main types of assignments for students
 
@@ -61,6 +81,40 @@ If that seems unlikely, you will need to choose a different project.
 -->
 
 
+## Materials
+
+
+### Computational Tools
+
+This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R.
+Instructions to install or upgrade R are [here](install.html).
+
+Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.
+
+Students will have access to [DataCamp classroom](https://www.datacamp.com/groups/education).
+You can use this for additional practice. 
+
+
+
+### Books
+
+This course will primarily rely on the following texts:
+
+- Imai, Kosuke. 2017. *Quantitative Social Science: An Introduction.* Princeton University Press.
+- Wickham, Hadley, and Garrett Grolemund. 2016. [R for Data Science](http://r4ds.had.co.nz/). O'Reilly Media. (free online)
+
+*Quantitative Social Science* (*QSS*) will provide the outline of the statistical topics that we will cover. 
+*R for Data Science* (*R4DS*) covers R programming for data visualization and wrangling.
+
+Additionally, these texts are supplemented by the following:
+
+- [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/). *R4DS* and this course will use a set of R packages known as the [tidyverse](https://www.tidyverse.org/). However, *QSS* does not. This course supplements *QSS* with *tidyverse*.
+- [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* solutions.
+
+There will be some additional readings as indicated in the [schedule](/schedule).
+
+
+
 ## Evaluation
 
 Students will be evaluated on the whole of their work in this course.
@@ -77,31 +131,25 @@ For this course, grades on the 4.0 scale have the following interpretation:
 </table>
 
 
-# Materials
+## Communication
 
-## Computational Tools
-
-This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R.
-Instructions to install or upgrade R are [here](install.html).
-
-Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.
-
-## Books
-
-This course will primarily rely on the following texts:
-
-- Imai, Kosuke. 2017. *A First Course in Quantitative Social Science.* Princeton University Press.
-- Wickham, Hadley, and Garrett Grolemund. 2016. [R for Data Science](http://r4ds.had.co.nz/). O'Reilly Media. (free for everyone online)
-
-Additionally, these text are supplemented by
-
-- [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/). This course will use a set of R packages known as the [tidyverse](https://www.tidyverse.org/). This provides tidyverse code equivalent to that in the *QSS* text.
-- [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* solutions.
-
-There will be some additional readings as indicated in the [schedule](/schedule).
+We know that statistics can be challenging and help is available when you need it. We have made
+every effort to give you the tools you need to succeed in this course. Ultimately though it is your
+responsibility o put in the effort and seek out that help.
+First, the readings provide ample sources of information and the suggested reading list contains
+many versions of the same material but presented from a different angle. Precept material and
+lecture slides will all be posted on Blackboard and can then be referenced.
+For questions about the material and problem sets we will be using Piazza. You will not be
+required to post, but the system is designed to get you help quickly and efficiently from classmates,
+the preceptors, and the professor. Unless the question is of a personal nature or completely
+specific to you, you should not e-mail teaching staff; instead, you should post your questions
+on Piazza. The course staff will be monitoring the page, but we encourage you to help your
+classmates as well. I will post the link to the course page here at the start of class
+The preceptors and the instructor will hold office hours each week
 
 
 ## Errata
+
 
 ### Resources
 
@@ -117,6 +165,7 @@ Beyond what the teaching team can providing, there are several resources on camp
 Science should be open, and this course builds up other open licensed material, so unless otherwise noted, all materials for this class are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 The source for the materials of this course is on GitHub at [UW-POLS501/2018](https://github.com/UW-POLS501/2018).
+
 
 ### Bugs
 

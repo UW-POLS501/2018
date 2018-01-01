@@ -3,31 +3,41 @@
 
 <div class="container">
 
+  <h1>Schedule</h1>
 
-    <h1>Schedule</h1>
+  {{ .Content }}
 
-    {{ .Content }}
+  <hr>
 
+  {{ range .Params.weeks }}
+    <h3>Week {{ .week }}</h3>
+
+    {{ range .classes }}
+      <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>Class</small></h5>
+      <p>{{- .description | markdownify -}}</p>
+      {{ if .readings }}
+        <p>
+        <strong>Readings before:</strong>
+          <ul>
+            {{ range .readings }}
+              <li>{{- . | markdownify -}}</li>
+            {{- end -}}
+          </ul>
+        </p>
+      {{ end }}
+      {{ if .after }}
+        <p>
+          <strong>Readings after:</strong>
+          <ul>
+            {{ range .after }}
+              <li>{{- . | markdownify -}}</li>
+            {{ end }}
+          </ul>
+        </p>
+      {{ end }}
+    {{ end}}
     <hr>
-
-    {{ range .Params.weeks }}
-      <h3>Week {{ .week }}</h3>
-
-      {{ range .classes }}
-        <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>Class</small> </h5>
-        <strong>Topics:</strong> {{- .topics | markdownify -}}
-        <ul>
-          {{ range .readings }}
-          <li>{{ . | markdownify }}</li>
-          {{ end }}
-        </ul>
-      {{ end}}
-      <hr>
-    {{ end }}
-
-  </div>
-
-
+  {{ end }}
 
 </div>
 

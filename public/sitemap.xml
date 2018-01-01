@@ -30,6 +30,10 @@
   </url>
   
   <url>
+    <loc>/pages/references/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <priority>0</priority>
   </url>
