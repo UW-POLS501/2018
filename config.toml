@@ -1,10 +1,11 @@
-baseurl = "/"
+baseurl = "https://UW-POLS501.github.io/2018/"
 languageCode = "en-us"
 title = "POLS 501: Advanced Political Research Design and Analysis"
 theme = "pols-501"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Set to docs for GitHub pages
 publishDir = "docs"
+
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
