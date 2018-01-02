@@ -64,7 +64,7 @@ There are three main types of assignments for students
 <!--
 
 ### Data analysis project paper
-
+legends o
 Every student in this class will execute their own statistical data analysis of a research question.
 The results of this analysis will be presented as a paper due at the end of the course. See the [schedule](/schedule/#finals-period) for the due date.
 
