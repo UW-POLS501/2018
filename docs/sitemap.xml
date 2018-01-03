@@ -3,30 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/project/</loc>
-    <lastmod>2017-12-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2018/project/"
-                />
+    <loc>/2018/schedule/</loc>
   </url>
   
   <url>
     <loc>/2018/assignments/</loc>
-  </url>
-  
-  <url>
-    <loc>/2018/project/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2018/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/2018/schedule/</loc>
   </url>
   
   <url>
@@ -45,6 +26,10 @@
   <url>
     <loc>/2018/pages/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2018/project/</loc>
   </url>
   
   <url>

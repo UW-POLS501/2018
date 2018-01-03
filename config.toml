@@ -15,6 +15,19 @@ publishDir = "docs"
     name = "Schedule"
     url = "/schedule/"
 
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+
+[[menu.main]]
+    name = "Assignments"
+    url = "/projects/"
+
+[[menu.main]]
+    name = "Pages"
+    url = "/pages/"
+
+
 [params]
     inprogress = true
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
