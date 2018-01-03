@@ -12,21 +12,20 @@ publishDir = "docs"
     page = "/:slug/"
 
 [[menu.main]]
-    name = "Schedule"
-    url = "/schedule/"
-
-[[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-
-[[menu.main]]
-    name = "Assignments"
-    url = "/projects/"
-
-[[menu.main]]
     name = "Pages"
     url = "/pages/"
 
+[[menu.main]]
+    name = "Assignments"
+    url = "/assignment/"
+
+[[menu.main]]
+    name = "Projects"
+    url = "/project/"
+
+[[menu.main]]
+    name = "Schedule"
+    url = "/schedule/"
 
 [params]
     inprogress = true
