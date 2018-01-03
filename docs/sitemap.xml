@@ -5,6 +5,24 @@
   <url>
     <loc>/2018/project/</loc>
     <lastmod>2017-12-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2018/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/2018/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>/2018/project/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2018/project/"
+                />
   </url>
   
   <url>
