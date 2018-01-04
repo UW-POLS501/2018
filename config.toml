@@ -11,26 +11,31 @@ publishDir = "docs"
     post = "/:year/:month/:day/:slug/"
     page = "/:slug/"
 
+
 [[menu.main]]
-    name = "Pages"
-    url = "/pages/"
+    name = "Schedule"
+    url = "/schedule/"
 
 [[menu.main]]
     name = "Assignments"
-    url = "/assignment/"
+    url = "/assignments/"
 
 [[menu.main]]
     name = "Projects"
     url = "/project/"
 
 [[menu.main]]
-    name = "Schedule"
-    url = "/schedule/"
+    name = "Pages"
+    url = "/pages/"
+
 
 [params]
     inprogress = true
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
-    NavbarBrand = "POLS 501"
+
+    [params.NavbarBrand]
+    name = "POLS 501"
+    URL = "/"
 
     [params.instructor]
       name = "Jeffrey B. Arnold"

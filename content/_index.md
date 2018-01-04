@@ -45,17 +45,6 @@ There are three main types of assignments for students
 2. Research project: Students will complete a research project. The expectation is that students will work on the project throughout the quarter and apply concepts and skills to that project soon after covering them in class. See the [project](/project) page for more details.
 3. Reading Assignments: Students are expected to come to class prepared. I have chosen textbooks that are accessible, so we will not spend valuable class time summarizing assigned readings. Instead we will use class for more value-added learning activities. As part of that, before each class students will provide feedback and questions on the readings that will be used to guide class in-class discussion.
 
-<!--
-
-### Data analysis project paper
-legends o
-Every student in this class will execute their own statistical data analysis of a research question.
-The results of this analysis will be presented as a paper due at the end of the course. See the [schedule](/schedule/#finals-period) for the due date.
-
-
-
--->
-
 
 ## Materials
 
@@ -91,7 +80,6 @@ Additionally, these texts are supplemented by the following:
 - [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* solutions.
 
 There will be some additional readings as indicated in the [schedule](/schedule).
-
 
 
 ## Evaluation
