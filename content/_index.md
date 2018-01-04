@@ -21,7 +21,7 @@ By the end of the course students will be able to
 2. Import and clean tabular data for use in statistical analysis using R
 3. Write clean, reusable, and reliable R code using current best practices
 4. Produce reproducible research using literate programming (R Markdown), version control (git and GitHub), and current best practices
-5. Explain the difference between descriptive, predictive, and causal stastical questions.
+5. Explain the difference between descriptive, predictive, and causal statistical questions.
 7. Explain the difference between estimation and hypothesis testing
 that can be used to make causal claims from observational data, including 
 8. Conduct, interpret, and communicate results from  t-tests, `$\chi^2$` tests, and linear regression.
@@ -31,26 +31,10 @@ that can be used to make causal claims from observational data, including
 
 ### Prerequisites
 
-<!--
-The most important prerequisite is a willingness to work hard on possibly unfamiliar material.
-Learning statistical methods is like learning a new language, and it will take time and dedication to master its vocabulary, its grammar, and its idioms. However like studying languages, statistics yields to daily practice and consistent effort. And statistical program is similar.
--->
-
 The course is suitable for students with a large range of prior exposure to statistics and mathematics. No prior statistical, mathematical, or programming experience is necessary beyond arithmetic, algebra, and elementary calculus.  
+The most important prerequisite is a willingness to work hard on possibly unfamiliar material.
+
 Since the background of students taking this course is heterogeneous, the topics and structure of the course is such that those with a wide background of technical skills are likely to find something useful in it.
-
-<!--
-
-## Meeting structure
-
-Class meetings and labs
-
-- *Overview:*
-- *Discussion:*
-- *Project:*
-- *Preview:*
-
--->
 
 
 ## Assignments
@@ -86,14 +70,17 @@ If that seems unlikely, you will need to choose a different project.
 
 ### Computational Tools
 
+Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.
+
 This course will use [R](https://www.r-project.org/), which is a free and open-source programming language primarily used for statistics and data analysis. We will also use [RStudio](https://www.rstudio.com/), which is an easy-to-use interface to R.
 Instructions to install or upgrade R are [here](install.html).
 
-Students should have a laptop that they can bring to both class and lab as we will integrate computing with learning data analysis and statistics throughout the course.
+This course will also use [git](https://git-scm.com/) (through RStudio) 
+for version control, which is like "track changes" for a directory of file, in reproducible research.
+Homework assignments will be distributed and submitted via [GitHub](https://github.com/), which is website that hosts git repositories.
+If that did not make sense, don't worry; we'll cover it in the course.
 
-Students will have access to [DataCamp classroom](https://www.datacamp.com/groups/education).
-You can use this for additional practice. 
-
+Students will have access to [DataCamp classroom](https://www.datacamp.com/groups/education). You can use this for additional practice. 
 
 
 ### Books
@@ -133,19 +120,11 @@ For this course, grades on the 4.0 scale have the following interpretation:
 
 ## Communication
 
-We know that statistics can be challenging and help is available when you need it. We have made
-every effort to give you the tools you need to succeed in this course. Ultimately though it is your
-responsibility o put in the effort and seek out that help.
-First, the readings provide ample sources of information and the suggested reading list contains
-many versions of the same material but presented from a different angle. Precept material and
-lecture slides will all be posted on Blackboard and can then be referenced.
-For questions about the material and problem sets we will be using Piazza. You will not be
-required to post, but the system is designed to get you help quickly and efficiently from classmates,
-the preceptors, and the professor. Unless the question is of a personal nature or completely
-specific to you, you should not e-mail teaching staff; instead, you should post your questions
-on Piazza. The course staff will be monitoring the page, but we encourage you to help your
-classmates as well. I will post the link to the course page here at the start of class
-The preceptors and the instructor will hold office hours each week
+For questions regarding the content of the course, ask and answer them on our [https://uwpolsmethods.slack.com/] channel. 
+If you have a question about the topic, it is likely that someone else had the same question.
+Posting questions and answers publicly allows us all to learn from each these questions and answers. 
+
+Reserve emails to the instructors for personal matters.
 
 
 ## Errata

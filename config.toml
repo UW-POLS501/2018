@@ -76,7 +76,7 @@ publishDir = "docs"
       endTime = "2018-01-05T15:20:00-08:00"
       [params.lab.room]
         building = "Savery"
-        number = "109"
+        number = "121"
         url = "https://www.washington.edu/maps/#!/sav"
 
     # options for highlight.js (version, additional languages, and theme)
