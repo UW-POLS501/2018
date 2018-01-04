@@ -12,4 +12,3 @@ Articles and books references in this course. Download these references as bibte
 
 ----
 
-foo

@@ -52,15 +52,7 @@ legends o
 Every student in this class will execute their own statistical data analysis of a research question.
 The results of this analysis will be presented as a paper due at the end of the course. See the [schedule](/schedule/#finals-period) for the due date.
 
-The purpose of this paper is for you to apply the quantitative methods used in this course to the real-world research problems that you will encounter in their research careers.
-The objective is to get you working with data on a research project as quickly as possible, even if it is a flawed project.
-So, due to the limited time in this course, it is not necessary for this paper to address an important research problem or a novel contribution to the literature.
-While those will not be criteria for the evaluation of this paper, you are encouraged to pursue those, as those ideas are what lead to publications.
-The paper will be evaluated on the appropriateness of the statistical methods applied to the data and question, and not the novelty or contribution of the question itself.
 
-If you developed a research design for POLS 500, you may be able to use it in 501.
-However you need to confirm that you will be able to assemble a dataset to test a specific research hypothesis within the time constraints of this course, because you will be using it throughout the course.
-If that seems unlikely, you will need to choose a different project.
 
 -->
 
