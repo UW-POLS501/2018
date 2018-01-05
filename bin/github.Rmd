@@ -1,0 +1,66 @@
+---
+title: "Miscellaneous Git Stuff"
+author: "Jeffrey Arnold"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Miscellaneous code used to do stuff with the GitHub API for this course.
+
+## Setup
+
+```{r}
+library("tidyverse")
+library("gh")
+```
+
+GitHub organization of the course:
+```{r}
+ORG <- "UW-POLS501"
+```
+GitHub team for students in this quarter's course:
+```{r}
+TEAM <- "Winter 2018 students"
+```
+Main repository for the course:
+```{r}
+REPOS <- "2018"
+```
+
+
+## Issues
+
+Create an issue for each assignment 1-9
+
+```{r}
+create_assignment_issue <- function(i) {
+  gh("POST /repos/:owner/:repo/issues",
+     owner = ORG, repo = REPOS,
+     title = glue("Write assignment {i}"),
+     body = glue("Write assignment {i}.",
+                 "- [ ] Create submission template in repo ",
+                 "- [ ] Write asssignment in content/assignments/assignment-{i}.md", 
+                 .sep = "\n"))
+}
+walk(1:9, create_assignment_issue)
+```
+
+Create an issue for the solutions in assignments 1-9
+```{r}
+create_assignment_key_issue <- function(i) {
+  gh("POST /repos/:owner/:repo/issues",
+     owner = ORG, repo = REPOS,
+     title = glue("Write solutions to assignment {i}"),
+     body = glue("Solutions should go in the respository ",
+                 "`UW-POLS501/assignment-{i}-solutions`.",
+                 "Students should not have access to it until solutions are released."),
+                 .sep = "\n")
+}
+walk(1:9, create_assignment_key_issue)
+```
+

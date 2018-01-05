@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Git and GitHub</title>
+      <link>/2018/pages/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/git/</guid>
+      <description>Cloning, Pull Requests, Forking, Pulling, and Pushing Relationship between git and GitHub
+  References  Simple guide to forks in GitHub and Git GitHub Help Git and GitHub videos for beginners from dataschool introduces git and GitHub via many videos.   </description>
+    </item>
+    
+    <item>
       <title>Onboarding</title>
       <link>/2018/pages/onboarding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

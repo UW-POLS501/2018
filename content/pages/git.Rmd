@@ -1,0 +1,19 @@
+---
+title: "Git and GitHub"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## Cloning, Pull Requests, Forking, Pulling, and Pushing
+
+![Relationship between git and GitHub](/img/github-diagram.svg)
+
+## References
+
+- [Simple guide to forks in GitHub and Git](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)
+- [GitHub Help](https://help.github.com/)
+- [Git and GitHub videos for beginners](http://www.dataschool.io/git-and-github-videos-for-beginners/) from dataschool introduces git and GitHub via many videos.
+
+
+
