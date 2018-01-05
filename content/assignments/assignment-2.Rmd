@@ -1,0 +1,9 @@
+---
+title: "Assignment 2"
+Draft:  true
+dateAssigned: 2018-01-16T16:30:00
+dateDue: 2018-01-23T16:30:00
+dateCorrectionsDue: 2018-01-30T16:30:00
+assignmentURL: https://github.com/UW-POLS501/2018-assignment-2
+solutionsURL: https://github.com/UW-POLS501/2018-assignment-2-solutions
+---
