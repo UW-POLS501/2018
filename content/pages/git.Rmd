@@ -11,7 +11,7 @@ library("DiagrammeR")
 
 ## Cloning, Pull Requests, Forking, Pulling, and Pushing
 
-![Relationship between git and GitHub](/img/github-diagram.svg)
+<img alt="Relationship between git and GitHub" src="/2018/img/github-diagram.svg">
 
 See the *Happy Git and Github for the useR* chapter [Fork a repo](http://happygitwithr.com/fork.html).
 
