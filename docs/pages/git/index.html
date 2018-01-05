@@ -79,16 +79,44 @@
     
 
     <div class="article-content">
-      <div id="cloning-pull-requests-forking-pulling-and-pushing" class="section level2">
+      <script src="/2018/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/2018/rmarkdown-libs/d3/d3.min.js"></script>
+<script src="/2018/rmarkdown-libs/dagre/dagre-d3.min.js"></script>
+<link href="/2018/rmarkdown-libs/mermaid/dist/mermaid.css" rel="stylesheet" />
+<script src="/2018/rmarkdown-libs/mermaid/dist/mermaid.slim.min.js"></script>
+<link href="/2018/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="/2018/rmarkdown-libs/chromatography/chromatography.js"></script>
+<script src="/2018/rmarkdown-libs/DiagrammeR-binding/DiagrammeR.js"></script>
+
+
+<div id="cloning-pull-requests-forking-pulling-and-pushing" class="section level2">
 <h2>Cloning, Pull Requests, Forking, Pulling, and Pushing</h2>
 <div class="figure">
 <img src="/img/github-diagram.svg" alt="Relationship between git and GitHub" />
 <p class="caption">Relationship between git and GitHub</p>
 </div>
+<p>See the <em>Happy Git and Github for the useR</em> chapter <a href="http://happygitwithr.com/fork.html">Fork a repo</a>.</p>
+</div>
+<div id="homework-workflow" class="section level2">
+<h2>Homework Workflow</h2>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"sequenceDiagram\n  participant org as UW-POLS501/assignment-1\n  participant user as student/assignment-1\n  participant local as local repository\n  org->>user: Fork repository\n  org->>local: Clone repository\n  loop Until complete\n    local->>local: Work and commit\n    local->>user: Push changes\n  end\n  user->>org: Submit with a pull request\n  Note over org,local: Solutions released in UW-POLS501/assignment-1-solutions\n  loop Until all corrections made\n    local->>local: Work and commit\n    local->>user: Push changes\n  end\n  user->>org: Submit with a pull request"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="project-workflow" class="section level2">
+<h2>Project workflow</h2>
+<p>For the project assignments, each student has a repository named <code>UW-POLS501/:username</code> where <code>:username</code> is the GitHub username of the student. This does not need to be forked. The student works directly on that repository, and submits assignments by opening an issue on <code>UW-POLS501/:username/issue</code>.</p>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"diagram":"sequenceDiagram\n  participant remote as UW-POLS501/student\n  participant local as local repository\n  remote->>local: Clone repository\n  Note over remote: Assignment 1\n  loop Until completed\n    local->>local: Work and commit\n    local->>remote: Push changes\n  end\n  remote->>remote: Open issue to submit\n  Note over remote: Assignment 2\n  loop Until completed\n    local->>local: Work and commit\n    local->>remote: Push changes\n  end\n  remote->>remote: Open issue to submit"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
 <ul>
+<li>Jenny Bryan, <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a></li>
+<li>DataCamp course <a href="http://swcarpentry.github.io/git-novice/">Version Control with Git</a>. This course requires shell knowledge, but the following two modules are useful.
+<ul>
+<li><a href="http://swcarpentry.github.io/git-novice/01-basics/">Automated Version Control</a></li>
+<li><a href="http://swcarpentry.github.io/git-novice/14-supplemental-rstudio/">Using Git from RStudio</a></li>
+</ul></li>
 <li><a href="http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/">Simple guide to forks in GitHub and Git</a></li>
 <li><a href="https://help.github.com/">GitHub Help</a></li>
 <li><a href="http://www.dataschool.io/git-and-github-videos-for-beginners/">Git and GitHub videos for beginners</a> from dataschool introduces git and GitHub via many videos.</li>
@@ -116,6 +144,9 @@
       
 
       
+<script src="/2018/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     </body>
   </div> 

@@ -5,15 +5,43 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r setup,include=FALSE}
+library("DiagrammeR")
+```
+
 ## Cloning, Pull Requests, Forking, Pulling, and Pushing
 
 ![Relationship between git and GitHub](/img/github-diagram.svg)
 
+See the *Happy Git and Github for the useR* chapter [Fork a repo](http://happygitwithr.com/fork.html).
+
+## Homework Workflow
+
+```{r echo=FALSE}
+mermaid("homework-flow.mmd")
+```
+
+## Project workflow
+
+For the project assignments, each student has a repository named
+`UW-POLS501/:username` where `:username` is the GitHub username of the student.
+This does not need to be forked. 
+The student works directly on that repository, and submits assignments by opening an issue on `UW-POLS501/:username/issue`.
+
+```{r echo=FALSE}
+mermaid("project-workflow.mmd")
+```
+
+
+
 ## References
 
+- Jenny Bryan, [Happy Git and GitHub for the useR](http://happygitwithr.com/)
+-   DataCamp course [Version Control with Git](http://swcarpentry.github.io/git-novice/). This course requires shell knowledge, but the following two modules are useful.
+    - [Automated Version Control](http://swcarpentry.github.io/git-novice/01-basics/)
+    - [Using Git from RStudio](http://swcarpentry.github.io/git-novice/14-supplemental-rstudio/)
 - [Simple guide to forks in GitHub and Git](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)
 - [GitHub Help](https://help.github.com/)
 - [Git and GitHub videos for beginners](http://www.dataschool.io/git-and-github-videos-for-beginners/) from dataschool introduces git and GitHub via many videos.
-
 
 
