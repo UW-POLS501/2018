@@ -5,10 +5,10 @@ title: "POLS/CSSS 501 (2018)"
 
 ## Overview
 
-This course is the first of a two-quarter sequence for Ph.D. students in political political science introductory methods sequence.
+This course is the first of a two-quarter introductory quantitative methods sequence for Ph.D. students in the social sciences.
 Students are introduced to the full stack of skills needed to conduct modern social science data analysis including data visualization, data wrangling, programming for data analysis, reproducible research, probability and statistical inference, linear regression, and causal inference.
-Students will learn these skills while applying it to their own research problem.
-The objective of this course is to provide students with an hands-on introduction and overview of modern social science data analysis and a base skills to pursue further studies and research in quantitative methods.
+Students will learn these skills while applying them to their own research problem.
+The objective of this course is to provide students with a hands-on introduction and overview of modern social science data analysis and a base of skills to pursue further research in quantitative methods.
 The next course in the sequence, POLS 503, covers linear models and causal inference methods in more detail.
 
 
@@ -22,10 +22,9 @@ By the end of the course students will be able to
 3.  Write clean, reusable, and reliable R code using current best practices
 4.  Produce reproducible research using literate programming (R Markdown), version control (git and GitHub), and current best practices
 5.  Explain the difference between descriptive, predictive, and causal statistical questions.
-7.  Explain the difference between estimation and hypothesis testing
-that can be used to make causal claims from observational data, including
+7.  Explain the difference between estimation and hypothesis testing that can be used to make causal claims from observational data
 8.  Conduct, interpret, and communicate results from  t-tests, `$\chi^2$` tests, and linear regression.
-7.  Explain limitations of causal inference using observational data and methods for making causal inference with observational data: selection on observables, difference-in-difference, before-and-after, regression discontinuity.
+7.  Explain limitations of causal inference using observational data (selection on observables) and methods for making causal inference with observational data (difference-in-difference, before-and-after, regression discontinuity).
 10. Feel empowered working with data
 
 
@@ -57,8 +56,8 @@ This course will use [R](https://www.r-project.org/), which is a free and open-s
 Instructions to install or upgrade R are [here](./pages/install/).
 
 This course will also use [git](https://git-scm.com/) (through RStudio)
-for version control, which is like "track changes" for a directory of file, in reproducible research.
-Homework assignments will be distributed and submitted via [GitHub](https://github.com/), which is website that hosts git repositories.
+for version control, which is like "track changes" for a directory of files, in reproducible research.
+Homework assignments will be distributed and submitted via [GitHub](https://github.com/), which is a website that hosts git repositories.
 If that did not make sense, don't worry; we'll cover it in the course.
 
 Students will have access to [DataCamp classroom](https://www.datacamp.com/groups/education). You can use this for additional practice.
@@ -77,7 +76,7 @@ This course will primarily rely on the following texts:
 Additionally, these texts are supplemented by the following:
 
 -   [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/). *R4DS* and this course will use a set of R packages known as the [tidyverse](https://www.tidyverse.org/). However, *QSS* does not. This course supplements *QSS* with *tidyverse*.
--   [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* solutions.
+-   [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* problems.
 
 There will be some additional readings as indicated in the [schedule](/schedule).
 
@@ -122,7 +121,7 @@ For this course, grades on the 4.0 scale have the following interpretation:
 
 For questions regarding the content of the course, ask and answer them on our [Slack](https://uwpolsmethods.slack.com/) channel.
 If you have a question about the topic, it is likely that someone else had the same question.
-Posting questions and answers publicly allows us all to learn from each these questions and answers.
+Posting questions and answers publicly allows us all to learn from each of these questions and answers.
 
 Reserve emails to the instructors for personal matters.
 
@@ -132,7 +131,7 @@ Reserve emails to the instructors for personal matters.
 
 ### Resources
 
-Beyond what the teaching team can providing, there are several resources on campus that you can go for assistance with data, computing, and statistical problems:
+Beyond what the teaching team can provide, there are several resources on campus that you can go to for assistance with data, computing, and statistical problems:
 
 -   Center for Social Science Computing and Research ([CSSCR](http://julius.csscr.washington.edu)) has a drop-in statistical consulting center in Savery 119. They provide consulting on statistical software, e.g. R. Go there for software or data related questions.
 -   [CSSS](https://csss.washington.edu) [Statistical Consulting](https://csss.washington.edu/consulting) provides general statistical consulting. Go there for questions about statistical methods.
@@ -146,4 +145,4 @@ Science should be open, and this course builds up other open licensed material, 
 
 ### Bugs
 
-If you find any typos or other issues in this page, any page in the site go to [issues](https://github.com/UW-POLS501/2018/issues), click on the "New Issue" button to create a new issue, and describe the problem.
+If you find any typos or other issues in this page, or any other page in the site, go to [issues](https://github.com/UW-POLS501/2018/issues), click on the "New Issue" button to create a new issue, and describe the problem.
