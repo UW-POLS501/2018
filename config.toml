@@ -58,8 +58,8 @@ publishDir = "docs"
       email = "chgarner@uw.edu"
       url = "https://www.polisci.washington.edu/people/calvin-garner"
       [params.ta.officeHours]
-        time = ""
-        room = ""
+        time = "Thursday 2-4pm (or by appointment)"
+        room = "Gowen 30"
 
     [params.course]
       title = "Advanced Political Research Design and Analysis"
