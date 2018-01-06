@@ -91,8 +91,8 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       readings:
       - '*R4DS* Ch 22 "[Model: Introduction](http://r4ds.had.co.nz/model-intro.html)"'
       - '*R4DS* Ch 23 "[Model Basics](http://r4ds.had.co.nz/model-basics.html)"'
-      - '*R4DS* Ch 24 "[Many Models](http://r4ds.had.co.nz/model-building.html)"'
-      - '*R4DS* Ch 25 "[Model Building](http://r4ds.had.co.nz/many-models.html)"'
+      - '*R4DS* Ch 24 "[Model Building](http://r4ds.had.co.nz/model-building.html)"'
+      - '*R4DS* Ch 25 "[Many Models](http://r4ds.had.co.nz/many-models.html)"'
   - week: 6
     classes:
     - type: class
