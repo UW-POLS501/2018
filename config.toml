@@ -30,7 +30,8 @@ publishDir = "docs"
 
 
 [params]
-    inprogress = true
+    # if true, includes a big button
+    inprogress = false
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
     sourceUrl = "https://github.com/UW-POLS501/2018/"
 
