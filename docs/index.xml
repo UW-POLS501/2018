@@ -5,7 +5,7 @@
     <link>/2018/</link>
     <description>Recent content in POLS/CSSS 501 (2018) on POLS 501: Advanced Political Research Design and Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     
 	<atom:link href="/2018/index.xml" rel="self" type="application/rss+xml" />
     
@@ -97,8 +97,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/pages/git/</guid>
-      <description>Cloning, Pull Requests, Forking, Pulling, and Pushing See the Happy Git and Github for the useR chapter Fork a repo.
+      <description>Cloning, Pull Requests, Forking, Pulling, and Pushing See the Happy Git and GitHub for the useR chapter Fork a repo.
  Homework Workflow  {&#34;x&#34;:{&#34;diagram&#34;:&#34;sequenceDiagram\n participant org as UW-POLS501/assignment-1\n participant user as student/assignment-1\n participant local as local repository\n org-user: Fork repository\n org-local: Clone repository\n loop Until complete\n local-local: Work and commit\n local-user: Push changes\n end\n user-org: Submit with a pull request\n Note over org,local: Solutions released in UW-POLS501/assignment-1-solutions\n loop Until all corrections made\n local-local: Work and commit\n local-user: Push changes\n end\n user-org: Submit with a pull request&#34;</description>
+    </item>
+    
+    <item>
+      <title>Installing R</title>
+      <link>/2018/pages/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/install/</guid>
+      <description>Installing or Updating R Install R The R website is … special. Since you probably don’t know or care what a mirror is, here are links to the
+ Go to the R Project website Choose the Download and install R your operation system:  Mac: Download R-3.4.3.pkg Windows: First click on base and then on Download R 3.4.3 for Windows    Upgrade R If you already have R installed, to check that you have the newest version of R, run</description>
     </item>
     
     <item>

@@ -1,8 +1,6 @@
 <!-- projects page -->
 {{ partial "header.html" . }}
 
-<main class="container">
-
   <h1>Projects</h1>
 
   <h2>Instructions</h2>
@@ -33,11 +31,9 @@
               {{ dateFormat "January 2" .Params.DateDue }}
             {{ end }}
           </td>
+        </tr>
         {{ end }}
-      </ul>
     </tbody>
   </table>
-
-</main>
 
 {{ partial "footer.html" . }}

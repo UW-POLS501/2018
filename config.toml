@@ -1,5 +1,5 @@
 baseurl = "https://UW-POLS501.github.io/2018/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "POLS 501: Advanced Political Research Design and Analysis"
 theme = "pols-501"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -22,7 +22,7 @@ publishDir = "docs"
 
 [[menu.main]]
     name = "Projects"
-    url = "/project/"
+    url = "/projects/"
 
 [[menu.main]]
     name = "Pages"
@@ -32,6 +32,11 @@ publishDir = "docs"
 [params]
     inprogress = true
     description = "The website Website for University of Washington: POLS 501 \"Advanced Political Research Design and Analysis\" (Winter 2018)."
+    sourceUrl = "https://github.com/UW-POLS501/2018/"
+
+    [params.license]
+      name = "Creative Commons Attribution 4.0 International License"
+      URL = "http://creativecommons.org/licenses/by/4.0/"
 
     [params.NavbarBrand]
     name = "POLS 501"

@@ -1,78 +1,73 @@
 <!-- This is the template for the homepage -->
 {{ partial "header.html" . }}
 
-  <main role="main">
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-      <h1 class="display-3">{{ .Site.Params.course.number }}</h1>
-      <h2 class="subtitle">{{ .Site.Params.course.title }}</h2>
-      <p>{{ .Site.Params.course.institution }}, {{ .Site.Params.course.term }} {{ .Site.Params.course.year }} </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">{{ .Site.Params.instructor.name }} <br> <small>Instructor</small></h3>
-            <h6 class="card-title">{{ .Site.Params.instructor.title }}</h6>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-globe"></i></span>{{ .Site.Params.instructor.url }} </li>
-              <li><span class="fa-li"><i class="fas fa-envelope"></i></span>{{ .Site.Params.instructor.email }} </li>
-              <li><span class="fa-li"><i class="fas fa-clock"></i></span>{{ .Site.Params.instructor.officeHours.room }}, {{ .Site.Params.instructor.officeHours.time }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">{{ .Site.Params.ta.name }} <br><small>Teaching Assistant</small></h3>
-            <h6 class="card-title">{{ .Site.Params.ta.title }}</h6>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-globe"></i></span>{{ .Site.Params.ta.url }} </li>
-              <li><span class="fa-li"><i class="fas fa-envelope"></i></span>{{ .Site.Params.ta.email }} </li>
-              <li><span class="fa-li"><i class="fas fa-clock"></i></span>{{ .Site.Params.ta.room }}, {{ .Site.Params.ta.officeHours.time }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <div>
-        {{ if .Site.Params.inprogress }}
-        <button type="button" class="btn btn-danger"><h2>This syllabus is still in progress</h2></button>
-        {{ end }}
-      </div>
+    <h1 class="display-3">{{ .Site.Params.course.number }}</h1>
+  <h2 class="subtitle">{{ .Site.Params.course.title }}</h2>
+    <p>{{ .Site.Params.course.institution }}, {{ .Site.Params.course.term }} {{ .Site.Params.course.year }} </p>
+    </div>
+  </div>
 
-      <article class="article">
-        <div class="article-content">
-
-        <h2>Class Meetings</h2>
-
-          <table class = "table table-striped table-hover">
-            <tr>
-              <td>Class </td>
-              <td>{{ dateFormat "Monday" .Site.Params.class.startTime }} </td>
-              <td>{{ dateFormat "03:04" .Site.Params.class.startTime }}&ndash;{{ dateFormat "03:04 PM" .Site.Params.class.endTime }}</td>
-              <td><a href="{{ .Site.Params.lab.room.url  }}">{{ .Site.Params.class.room.building }} {{ .Site.Params.class.room.number }} </a></td>
-            </tr>
-            <tr>
-              <td>Lab </td>
-              <td>{{ dateFormat "Monday" .Site.Params.lab.startTime }} </td>
-              <td>{{ dateFormat "03:04" .Site.Params.lab.startTime }}&ndash;{{ dateFormat "03:04 PM" .Site.Params.lab.endTime }}</td>
-              <td><a href="{{ .Site.Params.lab.room.url }}">{{ .Site.Params.lab.room.building }} {{ .Site.Params.lab.room.number }}</a> <br/>
-           </tr>
-         </table>
-
-          {{ .Content }}
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">{{ .Site.Params.instructor.name }} <br> <small>Instructor</small></h3>
+          <h6 class="card-title">{{ .Site.Params.instructor.title }}</h6>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-globe"></i></span>{{ .Site.Params.instructor.url }} </li>
+            <li><span class="fa-li"><i class="fas fa-envelope"></i></span>{{ .Site.Params.instructor.email }} </li>
+            <li><span class="fa-li"><i class="fas fa-clock"></i></span>{{ .Site.Params.instructor.officeHours.room }}, {{ .Site.Params.instructor.officeHours.time }}</li>
+          </ul>
         </div>
-      </article>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">{{ .Site.Params.ta.name }} <br><small>Teaching Assistant</small></h3>
+          <h6 class="card-title">{{ .Site.Params.ta.title }}</h6>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-globe"></i></span>{{ .Site.Params.ta.url }} </li>
+            <li><span class="fa-li"><i class="fas fa-envelope"></i></span>{{ .Site.Params.ta.email }} </li>
+            <li><span class="fa-li"><i class="fas fa-clock"></i></span>{{ .Site.Params.ta.room }}, {{ .Site.Params.ta.officeHours.time }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      {{ if .Site.Params.inprogress }}
+      <button type="button" class="btn btn-danger"><h2>This syllabus is still in progress</h2></button>
+      {{ end }}
     </div>
 
-  </main>
+    <article class="article">
+      <div class="article-content">
+
+      <h2>Class Meetings</h2>
+
+        <table class = "table table-striped table-hover">
+          <tr>
+            <td>Class </td>
+            <td>{{ dateFormat "Monday" .Site.Params.class.startTime }} </td>
+            <td>{{ dateFormat "03:04" .Site.Params.class.startTime }}&ndash;{{ dateFormat "03:04 PM" .Site.Params.class.endTime }}</td>
+            <td><a href="{{ .Site.Params.lab.room.url  }}">{{ .Site.Params.class.room.building }} {{ .Site.Params.class.room.number }} </a></td>
+          </tr>
+          <tr>
+            <td>Lab </td>
+            <td>{{ dateFormat "Monday" .Site.Params.lab.startTime }} </td>
+            <td>{{ dateFormat "03:04" .Site.Params.lab.startTime }}&ndash;{{ dateFormat "03:04 PM" .Site.Params.lab.endTime }}</td>
+            <td><a href="{{ .Site.Params.lab.room.url }}">{{ .Site.Params.lab.room.building }} {{ .Site.Params.lab.room.number }}</a> </td>
+         </tr>
+       </table>
+
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
 
 {{ partial "footer.html" . }}
-
