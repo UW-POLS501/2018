@@ -49,7 +49,7 @@ publishDir = "docs"
       email = "jrnold@uw.edu"
       url = "https://jrnold.com"
       [params.instructor.officeHours]
-        time = ""
+        time = "Monday, 2&ndash;4 pm"
         room = "Smith 221B"
 
     [params.ta]
@@ -58,7 +58,7 @@ publishDir = "docs"
       email = "chgarner@uw.edu"
       url = "https://www.polisci.washington.edu/people/calvin-garner"
       [params.ta.officeHours]
-        time = "Thursday 2-4pm"
+        time = "Thursday, 2&ndash;4 pm"
         room = "Gowen 30"
 
     [params.course]
