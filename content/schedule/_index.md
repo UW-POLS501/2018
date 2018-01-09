@@ -20,8 +20,8 @@ weeks:
       readings:
       - '*QSS* Ch 2. "Causality"'
       - '*R4DS* Ch 8. "[Project](http://r4ds.had.co.nz/workflow-projects.html)"'
-      - "Simpson's Paradox - Notes"
       - 'Wickham H (2010). "A layered grammar of graphics." *Journal of Computational and Graphical Statistics*, [doi:10.1198/jcgs.2009.07098](https://doi.org/10.1198/jcgs.2009.07098).'
+      after:
       - 'Bertrand M and Mullainathan S (2004). "Are Emily and Greg More Employable Than
 Lakisha and Jamal? A Field Experiment on Labor Market Discrimination." *American
 Economic Review*, [doi:10.1257/0002828042002561](https://doi.org/10.1257/0002828042002561)'
@@ -51,18 +51,18 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       - '*R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"'
       - '*R4DS* Ch. 11 "[Data Import](http://r4ds.had.co.nz/data-import.html)"'
       - '*R4DS* Ch. 13. "[Relational Data](http://r4ds.had.co.nz/relational-data.html)"'
-      - '*R4DS* Ch. 14. "[Strings](http://r4ds.had.co.nz/strings.html)"'
-      - '*R4DS* Ch. 15. "[Factors](http://r4ds.had.co.nz/factors.html)"'
-      - '*R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)"'
+      - '*R4DS* Ch. 14. "[Strings](http://r4ds.had.co.nz/strings.html)" (skim)'
+      - '*R4DS* Ch. 15. "[Factors](http://r4ds.had.co.nz/factors.html)" (skim)'
+      - '*R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)'
       description: ""      
   - week: 4
     classes:
     - type: class
       date: '2018-01-23'
       readings:
-      - "Notes on Description, EDA, and Measurement"
       - '*QSS* Ch 3. "Measurement"'
       - '*R4DS* Ch. 7. "[Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html)"'
+      additional:
       - 'Lyall J, Blair G and Imai K (2013). "Explaining Support for Combatants during Wartime: A Survey Experiment in Afghanistan." *American Political Science Review*, [doi:10.1017/s0003055413000403](https://doi.org/10.1017/s0003055413000403).'
       - 'Blair G, Imai K and Lyall J (2014). "Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan." *American Journal of Political Science*, [doi:10.1111/ajps.12086](https://doi.org/10.1111/ajps.12086).'
       description: "Measurement"
@@ -76,14 +76,10 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-01-30'
       readings:
       - '*QSS* Ch 4. "Prediction"'
+      additional:
       - 'Todorov A, Mandisodza AN, Goren A and Hall CC (2005). "Inferences of Competence from Faces Predict Election Outcomes." *Science*, [doi:10.1126/science.1110589](https://doi.org/10.1126/science.1110589).'
       - 'Chattopadhyay R and Duflo E (2004). "Women as Policy Makers: Evidence from a Randomized Policy Experiment in India." *Econometrica*,[doi:10.1111/j.1468-0262.2004.00539.x](https://doi.org/10.1111/j.1468-0262.2004.00539.x).'
       - 'Eggers AC and Hainmueller J (2009). "MPs for Sale? Returns to Office in Postwar British Politics." *American Political Science Review*, [doi:10.1017/s0003055409990190](https://doi.org/10.1017/s0003055409990190).'
-      - Prediction Notes
-      - Cross Validation Notes
-      additional:
-      - "Schmueli To Explain or Predict"
-      - "Policy Prediction Tasks"
       description: "Prediction"
     - type: lab
       date: '2018-02-02'
@@ -99,6 +95,7 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-02-06'
       readings:
       - '*QSS* Ch 6. "Probability"'
+      additional:
       - 'Stark PB (2010). "Null and vetoed: Chance." *Chance*, [doi:10.1007/s00144-010-0034-x](https://doi.org/10.1007/s00144-010-0034-x).'
       - 'Imai K and Khanna K (2016). "Improving Ecological Inference by Predicting Individual Ethnicity from Voter Registration Records." _Political Analysis_, [doi:10.1093/pan/mpw001](https://doi.org/10.1093/pan/mpw001).'
       description: ""      
@@ -134,6 +131,7 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-02-27'
       readings:
       - '*QSS* Ch 7.3 "Linear Regression Model with Uncertainty"'
+      additional:
       - 'Gerber AS, Green DP and Larimer CW (2008). "Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment." *American Political Science Review*, [doi:10.1017/s000305540808009x](https://doi.org/10.1017/s000305540808009x).'      
       description: "Inference for the Linear Model"
     - type: lab
