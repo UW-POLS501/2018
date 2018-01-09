@@ -2,4 +2,5 @@
 title: "Project Assignment 2"
 Draft:  true
 dateDue: null
+projects_weight: 20
 ---
