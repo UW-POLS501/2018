@@ -1,18 +1,13 @@
-<!-- schedule page -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <main class="container">
+  <h1>Pages</h1>
 
-    <h1>Pages</h1>
-
-    <ul>
-      {{ range .Data.Pages }}
+  <ul>
+    {{ range .Data.Pages }}
           <li>
               <a href="{{ .Permalink }}">{{ .Title }}</a>
           </li>
       {{ end }}
     </ul>
-
 </main>
-
-{{ partial "footer.html" . }}
+{{ end }}

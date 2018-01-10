@@ -1,8 +1,5 @@
-<!-- schedule page -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <main class="container">
-
     <h1>{{ .Title }}</h1>
 
     {{ .Content }}
@@ -14,7 +11,5 @@
           </li>
       {{ end }}
     </ul>
-
 </main>
-
-{{ partial "footer.html" . }}
+{{ end }}

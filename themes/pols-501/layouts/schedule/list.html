@@ -1,6 +1,4 @@
-<!-- schedule page -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="container">
 
   <h1>Schedule</h1>
@@ -27,7 +25,7 @@
       {{ end }}
       {{ if .after }}
         <p>
-          <strong>Readings after:</strong>
+          <strong>Optional readings after:</strong>
           <ul>
             {{ range .after }}
               <li>{{- . | markdownify -}}</li>
@@ -40,5 +38,4 @@
   {{ end }}
 
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}

@@ -1,13 +1,13 @@
-<!-- projects page -->
-{{ partial "header.html" . }}
+{{ define "main" }}
+<main class="container">
+  <h1>{{ .Title }}</h1>
 
-<h1>{{ .Title }}</h1>
+  <p>
+    <strong>Due Date:</strong> {{ if .Params.dateDue }}{{ dateFormat "January 2, 2006 3:04 pm" .Params.dateDue }}{{ end }}
+  </p>
 
-<p>
-  <strong>Due Date:</strong> {{ if .Params.dateDue }}{{ dateFormat "January 2, 2006 3:04 pm" .Params.dateDue }}{{ end }}
-</p>
+  {{ .Content }}
 
+</main>
 
-{{ .Content }}
-
-{{ partial "footer.html" . }}
+{{ end }}

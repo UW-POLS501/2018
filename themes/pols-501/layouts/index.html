@@ -1,6 +1,5 @@
-<!-- This is the template for the homepage -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
+<main class="container">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
     <h1 class="display-3">{{ .Site.Params.course.number }}</h1>
@@ -69,5 +68,5 @@
       </div>
     </article>
   </div>
-
-{{ partial "footer.html" . }}
+</main>
+{{ end }}
