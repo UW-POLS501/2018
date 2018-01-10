@@ -11,66 +11,68 @@
     
     
     <item>
-      <title>Project Assignment 1</title>
-      <link>/2018/projects/project-assignment-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/projects/project-assignment-1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Project Assignment 2</title>
-      <link>/2018/projects/project-assignment-2/</link>
+      <link>/2018/projects/2-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-2/</guid>
+      <guid>/2018/projects/2-project-assignment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project Assignment 3</title>
-      <link>/2018/projects/project-assignment-3/</link>
+      <link>/2018/projects/3-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-3/</guid>
+      <guid>/2018/projects/3-project-assignment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project Assignment 4</title>
-      <link>/2018/projects/project-assignment-4/</link>
+      <link>/2018/projects/4-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-4/</guid>
+      <guid>/2018/projects/4-project-assignment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project Assignment 5</title>
-      <link>/2018/projects/project-assignment-5/</link>
+      <link>/2018/projects/5-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-5/</guid>
+      <guid>/2018/projects/5-project-assignment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project Assignment 6</title>
-      <link>/2018/projects/project-assignment-6/</link>
+      <link>/2018/projects/6-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-6/</guid>
+      <guid>/2018/projects/6-project-assignment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project Assignment 7</title>
-      <link>/2018/projects/project-assignment-7/</link>
+      <link>/2018/projects/7-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/projects/project-assignment-7/</guid>
+      <guid>/2018/projects/7-project-assignment/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Proposal</title>
+      <link>/2018/projects/1-project-assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/projects/1-project-assignment/</guid>
+      <description>Add the file doc/initial-proposal.md In a paragraph or two:
+State a research question. Describe what data you will use to answer the question. Discuss where and how will you get that data.  Commit changes to GitHub. We will do this at the start of class
+  </description>
     </item>
     
   </channel>

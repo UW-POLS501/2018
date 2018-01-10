@@ -1,0 +1,17 @@
+---
+title: "Proposal"
+Draft:  false
+dateDue: 2018-01-16T16:30:00-07:00
+assigned: 2018-01-08
+projects_weight: 10
+---
+
+1. Add the file `doc/initial-proposal.md`
+2. In a paragraph or two:
+
+    1. State a research question.
+    2. Describe what data you will use to answer the question.
+    3. Discuss where and how will you get that data.
+    
+3. Commit changes to GitHub. *We will do this at the start of class*
+

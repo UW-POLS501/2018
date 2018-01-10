@@ -3,6 +3,8 @@ title: "Project Assignments"
 output: html_document
 ---
 
+# Overview
+
 The best way to learn data analysis is to do it. 
 As such, you will apply the  skills and concepts learned in this course to answer a question of interest to you. 
 The objective is to get you working with data on a research project as quickly as possible, even if it is a imperfect project (hint: all research is imperfect).
@@ -32,11 +34,5 @@ This can be a topic or question that you are using in another course.
 
 Students will work on the project throughout the quarter, with a series of assignments:
 
-1. Initial proposal
-2. Second proposal
-3. Find, Clean, Load and Describe Data
-5. Exploratory Data Analysis
-6. Run initial model
-7. Peer review 
-8. Add uncertainty
+# Git Submission Process
 

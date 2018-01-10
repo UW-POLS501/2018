@@ -20,10 +20,10 @@
         {{ range .Data.Pages }}
         <tr>
           <td>
-            {{ if .Draft }}
+            {{ if .Params.Draft }}
               {{ .Title }}
             {{ else }}
-              <a href="{{ .Data.URL }}">{{ .Title }}</a>
+              <a href="{{ .URL }}">{{ .Title }}</a>
             {{ end }}
           </td>
           <td>
