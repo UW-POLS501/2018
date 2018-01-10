@@ -78,7 +78,7 @@ publishDir = "docs"
       endTime = "2018-01-09T19:20:00-08:00"
       [params.class.room]
         building = "Savery"
-        number = "109"
+        number = "140"
         url = "https://www.washington.edu/maps/#!/sav"
 
 
