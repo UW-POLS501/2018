@@ -16,7 +16,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/assignments/assignment-1/</guid>
-      <description></description>
+      <description>Fork https://github.com/UW-POLS501/2018-assignment-1 Write your exercise answers in 2018-assignment-1.Rmd Commit both the Rmd and the generated html files When ready, create a pull request with the title “Initial submission” Create a pull request  We will cover the submission at the start of class on Tuesday.
+Exercise 1 QSS Exercise 1.5.1
+ Exercise 2 QSS Exercise 1.5.2
+ Exercise 3 QSS Exercise 2.8.3
+ </description>
     </item>
     
     <item>

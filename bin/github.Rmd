@@ -157,7 +157,8 @@ create_student_repo <- function(username) {
 ```
 
 ```{r}
-walk(student_logins, create_student_repo)
+# walk(student_logins, create_student_repo)
+walk("nfullman", create_student_repo)
 ```
 
 
@@ -182,7 +183,7 @@ submit_assignment <- function(corrected = FALSE) {
                owner = owner, repo = repo)[[1]]
 
   # create a tag
-  this automatically creates a release
+  # this automatically creates a release
   tagname <- "submission"
   gh("POST /repos/:owner/:repo/git/refs",
             owner = owner, repo = repo,

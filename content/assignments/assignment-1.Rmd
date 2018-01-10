@@ -7,3 +7,35 @@ dateCorrectionsDue: 2018-01-23T16:30:00
 assignmentURL: https://github.com/UW-POLS501/2018-assignment-1
 solutionsURL: https://github.com/UW-POLS501/2018-assignment-1-solutions
 ---
+
+1. Fork https://github.com/UW-POLS501/2018-assignment-1
+2. Write your exercise answers in 2018-assignment-1.Rmd
+3. Commit both the *Rmd* and the generated *html* files
+4. When ready, create a pull request with the title "Initial submission"
+6. Create a pull request
+
+*We will cover the submission at the start of class on Tuesday.*
+
+
+# Exercise 1
+
+*QSS* Exercise 1.5.1
+
+# Exercise 2
+
+*QSS* Exercise 1.5.2
+
+# Exercise 3
+
+*QSS* Exercise 2.8.3
+
+<!-- 
+# Exercise 4
+
+Many of the variables in Ex 1.5.1 can be found in the World Bank's World Development Indicators, [http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators](WDI).
+The WDI is a good source for country-level economic, financial, and demographic data for the period 1960--present.
+
+You can access the WDI data through its [web interface](http://databank.worldbank.org/data/reports.aspx?source=world-development-indicators).
+Additionally, you can https://github.com/GIST-ORNL/wbstats
+
+-->
