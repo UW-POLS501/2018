@@ -1,6 +1,6 @@
 ---
-title: "Project Assignment 2"
+title: "Proposal II and Data Description"
 Draft:  true
 dateDue: null
-projects_weight: 20
+weight: 20
 ---

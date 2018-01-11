@@ -1,5 +1,6 @@
 ---
-title: "Project Assignment 6"
+title: "Peer Review"
 Draft:  true
 dateDue: null
+weight: 60
 ---

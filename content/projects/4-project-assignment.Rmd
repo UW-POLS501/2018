@@ -1,5 +1,6 @@
 ---
-title: "Project Assignment 4"
+title: "Model"
 Draft:  true
 dateDue: null
+weight: 40
 ---

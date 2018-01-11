@@ -1,5 +1,9 @@
 ---
-title: "Project Assignment 7"
-Draft:  true
-dateDue: null
+title: "Final Product"
+Draft:  false
+dateDue: 2018-03-16T16:30:00-07:00
+weight: 100
 ---
+
+Details will be posted later.
+

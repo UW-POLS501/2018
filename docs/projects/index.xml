@@ -11,7 +11,18 @@
     
     
     <item>
-      <title>Project Assignment 2</title>
+      <title>Proposal</title>
+      <link>/2018/projects/1-project-assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/projects/1-project-assignment/</guid>
+      <description>Add the file doc/initial-proposal.md In a paragraph or two:
+State a research question. Describe what data you will use to answer the question. Discuss where and how will you get that data.  Commit changes to GitHub. We will do this at the start of class
+  </description>
+    </item>
+    
+    <item>
+      <title>Proposal II and Data Description</title>
       <link>/2018/projects/2-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -20,7 +31,7 @@
     </item>
     
     <item>
-      <title>Project Assignment 3</title>
+      <title>Exploratory Data Analysis</title>
       <link>/2018/projects/3-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -29,7 +40,7 @@
     </item>
     
     <item>
-      <title>Project Assignment 4</title>
+      <title>Model</title>
       <link>/2018/projects/4-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -47,7 +58,7 @@
     </item>
     
     <item>
-      <title>Project Assignment 6</title>
+      <title>Peer Review</title>
       <link>/2018/projects/6-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -56,23 +67,12 @@
     </item>
     
     <item>
-      <title>Project Assignment 7</title>
+      <title>Final Product</title>
       <link>/2018/projects/7-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/projects/7-project-assignment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Proposal</title>
-      <link>/2018/projects/1-project-assignment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/projects/1-project-assignment/</guid>
-      <description>Add the file doc/initial-proposal.md In a paragraph or two:
-State a research question. Describe what data you will use to answer the question. Discuss where and how will you get that data.  Commit changes to GitHub. We will do this at the start of class
-  </description>
+      <description>Details will be posted later.</description>
     </item>
     
   </channel>
