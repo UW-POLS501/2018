@@ -10,11 +10,11 @@
   <table class="table">
     <thead>
       <tr>
-      <th>Instructions</th>
+      <th></th>
       <th>Assigned date</th>
       <th>Due date</th>
       <th>Corrections due date</th>
-      <th>Submissions <i class="fa fa-github"></i></th>
+      <th>Instructions and<br>Submissions <i class="fa fa-github"></i></th>
       <th>Solutions <i class="fa fa-github"></i></th>
       </tr>
     </thead>
@@ -24,11 +24,7 @@
         {{ $assignmentURL := urls.Parse .Params.assignmentURL }}
         <tr>
           <td>
-            {{ if .Draft }}
-              {{ .Title }}
-            {{ else }}
-              <a href="{{ .URL }}">{{ .Title }}</a>
-            {{ end }}
+            {{ .Title }}
           </td>
           <td>
             {{ dateFormat "January 2" .Params.DateAssigned }}
