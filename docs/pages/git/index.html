@@ -2,34 +2,30 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.31.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.31.1" />
+
+      
+      <title>Git and GitHub - POLS 501: Advanced Political Research Design and Analysis</title>
+      <meta property="og:title" content="Git and GitHub - POLS 501: Advanced Political Research Design and Analysis">
+    
+
+    
+      
+    
+
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/2018/bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css">
+
+    <script defer src="/2018/fontawesome/js/fontawesome-all.js"></script>
 
 
-<title>Git and GitHub - POLS 501: Advanced Political Research Design and Analysis</title>
-<meta property="og:title" content="Git and GitHub - POLS 501: Advanced Political Research Design and Analysis">
-
-
-
-  
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/2018/bootstrap-4.0.0-beta.2-dist/css/bootstrap.min.css">
-
-<script defer src="/2018/fontawesome/js/fontawesome-all.js"></script>
-
-
-<link rel="stylesheet" href="/2018/css/pols501.css" media="all">
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="/2018/css/pols501.css" media="all">
 
   </head>
   <body>
@@ -64,41 +60,14 @@
   </div>
 </nav>
 
-    <main role="main" class="container">
-
-
-  <article>
     
-
+<main class="container">
     <h1>Git and GitHub</h1>
 
-    
-
-    <script src="/2018/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
-<script src="/2018/rmarkdown-libs/d3/d3.min.js"></script>
-<script src="/2018/rmarkdown-libs/dagre/dagre-d3.min.js"></script>
-<link href="/2018/rmarkdown-libs/mermaid/dist/mermaid.css" rel="stylesheet" />
-<script src="/2018/rmarkdown-libs/mermaid/dist/mermaid.slim.min.js"></script>
-<link href="/2018/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
-<script src="/2018/rmarkdown-libs/chromatography/chromatography.js"></script>
-<script src="/2018/rmarkdown-libs/DiagrammeR-binding/DiagrammeR.js"></script>
-
-
-<div id="cloning-pull-requests-forking-pulling-and-pushing" class="section level2">
-<h2>Cloning, Pull Requests, Forking, Pulling, and Pushing</h2>
-<p><img alt="Relationship between git and GitHub" src="/2018/img/github-diagram.svg"></p>
-<p>See the <em>Happy Git and GitHub for the useR</em> chapter <a href="http://happygitwithr.com/fork.html">Fork a repo</a>.</p>
-</div>
-<div id="homework-workflow" class="section level2">
-<h2>Homework Workflow</h2>
-<div id="htmlwidget-1" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"sequenceDiagram\n  participant org as UW-POLS501/assignment-1\n  participant user as student/assignment-1\n  participant local as local repository\n  org->>user: Fork repository\n  org->>local: Clone repository\n  loop Until complete\n    local->>local: Work and commit\n    local->>user: Push changes\n  end\n  user->>org: Submit with a pull request\n  Note over org,local: Solutions released in UW-POLS501/assignment-1-solutions\n  loop Until all corrections made\n    local->>local: Work and commit\n    local->>user: Push changes\n  end\n  user->>org: Submit with a pull request"},"evals":[],"jsHooks":[]}</script>
-</div>
-<div id="project-workflow" class="section level2">
-<h2>Project workflow</h2>
-<p>For the project assignments, each student has a repository named <code>UW-POLS501/:username</code> where <code>:username</code> is the GitHub username of the student. This does not need to be forked. The student works directly on that repository, and submits assignments by opening an issue on <code>UW-POLS501/:username/issue</code>.</p>
-<div id="htmlwidget-2" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2">{"x":{"diagram":"sequenceDiagram\n  participant remote as UW-POLS501/student\n  participant local as local repository\n  remote->>local: Clone repository\n  Note over remote: Assignment 1\n  loop Until completed\n    local->>local: Work and commit\n    local->>remote: Push changes\n  end\n  remote->>remote: Open issue to submit\n  Note over remote: Assignment 2\n  loop Until completed\n    local->>local: Work and commit\n    local->>remote: Push changes\n  end\n  remote->>remote: Open issue to submit"},"evals":[],"jsHooks":[]}</script>
+    <p>For quick introduction on learn how to use Version control within RStudio, I suggest the “Version Control” chapter of the <a href="https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2">Workign with the RStudio IDE (Part 2)</a> DataCamp course.</p>
+<div id="relationship-between-github-and-local-git-projects" class="section level2">
+<h2>Relationship between GitHub and Local Git Projects</h2>
+<p><img alt="Relationship between git and GitHub" src="../../img/github-diagram.svg"></p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
@@ -115,7 +84,8 @@
 </ul>
 </div>
 
-  </article>
+
+</main>
 
     </main>
     <footer class="footer bg-light text-muted">
@@ -130,19 +100,11 @@
         </p>
       </div>
     </footer>
-    
-<script src="/2018/js/jquery-3.2.1.slim.min.js"></script>
-<script src="/2018/js/popper.js"></script>
-
-<script src="/2018/bootstrap-4.0.0-beta.2-dist/js/bootstrap.min.js"></script>
 
     
 
     
-<script src="/2018/js/math-code.js"></script>
-<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
   </body>
 </html>
-

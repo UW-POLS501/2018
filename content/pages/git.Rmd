@@ -1,38 +1,12 @@
 ---
 title: "Git and GitHub"
-output: html_document
-editor_options:
-  chunk_output_type: console
 ---
 
-```{r setup,include=FALSE}
-library("DiagrammeR")
-```
+For quick introduction on  learn how to use Version control within RStudio, I suggest the "Version Control" chapter of the [Workign with the RStudio IDE (Part 2)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2) DataCamp course.
 
-## Cloning, Pull Requests, Forking, Pulling, and Pushing
+## Relationship between GitHub and Local Git Projects
 
-<img alt="Relationship between git and GitHub" src="/2018/img/github-diagram.svg">
-
-See the *Happy Git and GitHub for the useR* chapter [Fork a repo](http://happygitwithr.com/fork.html).
-
-## Homework Workflow
-
-```{r echo=FALSE}
-mermaid("homework-flow.mmd")
-```
-
-## Project workflow
-
-For the project assignments, each student has a repository named
-`UW-POLS501/:username` where `:username` is the GitHub username of the student.
-This does not need to be forked.
-The student works directly on that repository, and submits assignments by opening an issue on `UW-POLS501/:username/issue`.
-
-```{r echo=FALSE}
-mermaid("project-workflow.mmd")
-```
-
-
+<img alt="Relationship between git and GitHub" src="../../img/github-diagram.svg">
 
 ## References
 
