@@ -76,7 +76,7 @@ This course will primarily rely on the following texts:
 Additionally, these texts are supplemented by the following:
 
 -   [QSS Tidyverse Code](https://jrnold.github.io/qss-tidy/). *R4DS* and this course will use a set of R packages known as the [tidyverse](https://www.tidyverse.org/). However, *QSS* does not. This course supplements *QSS* with *tidyverse*.
--   [R for Data Science Solutions](https://jrnold.github.io/e4qf/), to help you when working through *R for Data Science* problems.
+-   [R for Data Science Solutions](https://jrnold.github.io/r4ds-exercise-solutions/), to help you when working through *R for Data Science* problems.
 
 There will be some additional readings as indicated in the [schedule](/schedule).
 
