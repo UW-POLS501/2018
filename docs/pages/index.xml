@@ -12,6 +12,16 @@
     
     <item>
       <title>Git and GitHub</title>
+      <link>/2018/pages/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/git/</guid>
+      <description>For quick introduction on learn how to use Version control within RStudio, I suggest the “Version Control” chapter of the Working with the RStudio IDE (Part 2) DataCamp course.
+Relationship between GitHub and Local Git Projects  References  Jenny Bryan, Happy Git and GitHub for the useR DataCamp course Version Control with Git. This course requires shell knowledge, but the following two modules are useful.  Automated Version Control Using Git from RStudio  Simple guide to forks in GitHub and Git GitHub Help Git and GitHub videos for beginners from dataschool introduces git and GitHub via many videos.</description>
+    </item>
+    
+    <item>
+      <title>Git: Assignment Submission and Workflow</title>
       <link>/2018/pages/git-assignment-workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,13 +32,13 @@
     </item>
     
     <item>
-      <title>Git and GitHub</title>
-      <link>/2018/pages/git/</link>
+      <title>Git: Project Submission and Workflow</title>
+      <link>/2018/pages/git-project-workflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2018/pages/git/</guid>
-      <description>For quick introduction on learn how to use Version control within RStudio, I suggest the “Version Control” chapter of the Workign with the RStudio IDE (Part 2) DataCamp course.
-Relationship between GitHub and Local Git Projects  References  Jenny Bryan, Happy Git and GitHub for the useR DataCamp course Version Control with Git. This course requires shell knowledge, but the following two modules are useful.  Automated Version Control Using Git from RStudio  Simple guide to forks in GitHub and Git GitHub Help Git and GitHub videos for beginners from dataschool introduces git and GitHub via many videos.</description>
+      <guid>/2018/pages/git-project-workflow/</guid>
+      <description>For the project assignments, each student has a repository named UW-POLS501/:username where :username is the GitHub username of the student. This does not need to be forked. The student works directly on that repository, and submits assignments by opening an issue on UW-POLS501/:username/issue.
+ {&#34;x&#34;:{&#34;diagram&#34;:&#34;sequenceDiagram\n participant remote as UW-POLS501/student\n participant local as local repository\n remote-local: Clone repository\n Note over remote: Assignment 1\n loop Until completed\n local-local: Work and commit\n local-remote: Push changes\n end\n remote-remote: Open issue to submit\n Note over remote: Assignment 2\n loop Until completed\n local-local: Work and commit\n local-remote: Push changes\n end\n remote-remote: Open issue to submit&#34;</description>
     </item>
     
     <item>
@@ -59,16 +69,6 @@ Relationship between GitHub and Local Git Projects  References  Jenny Bryan, Hap
       <guid>/2018/pages/onboarding/</guid>
       <description>Please complete the following before the first day of class.
  Sign up for our Slack channel. You should have received an invite. If not email the instructors. Sign up for a GitHub Fill out course survey using the course. The should have received an email with the link. A link is also posted on the Slack channel. Fill out the survey with office hour preferences. See the email sent to the class or the Slack channel for a link.</description>
-    </item>
-    
-    <item>
-      <title>Project Assigment Workflow</title>
-      <link>/2018/pages/git-project-workflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2018/pages/git-project-workflow/</guid>
-      <description>For the project assignments, each student has a repository named UW-POLS501/:username where :username is the GitHub username of the student. This does not need to be forked. The student works directly on that repository, and submits assignments by opening an issue on UW-POLS501/:username/issue.
- {&#34;x&#34;:{&#34;diagram&#34;:&#34;sequenceDiagram\n participant remote as UW-POLS501/student\n participant local as local repository\n remote-local: Clone repository\n Note over remote: Assignment 1\n loop Until completed\n local-local: Work and commit\n local-remote: Push changes\n end\n remote-remote: Open issue to submit\n Note over remote: Assignment 2\n loop Until completed\n local-local: Work and commit\n local-remote: Push changes\n end\n remote-remote: Open issue to submit&#34;</description>
     </item>
     
     <item>

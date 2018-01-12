@@ -2,7 +2,7 @@
 title: "Git and GitHub"
 ---
 
-For quick introduction on  learn how to use Version control within RStudio, I suggest the "Version Control" chapter of the [Workign with the RStudio IDE (Part 2)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2) DataCamp course.
+For quick introduction on  learn how to use Version control within RStudio, I suggest the "Version Control" chapter of the [Working with the RStudio IDE (Part 2)](https://www.datacamp.com/courses/working-with-the-rstudio-ide-part-2) DataCamp course.
 
 ## Relationship between GitHub and Local Git Projects
 

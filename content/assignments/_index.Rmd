@@ -23,6 +23,11 @@ The assignment workflow is:
     ✓    Acceptable
     ∅    Unacceptable
     ---- -------------------------------------------------    
+
+## GitHub Submission Workflow
+
+Assignments are distributed and submitted via GitHub. 
+See [this page](../pages/git-assignment-workflow/) for instructions and a description of the workflow.
      
-## Assignments
+## Schedule
 
