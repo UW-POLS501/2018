@@ -31,6 +31,16 @@
     </item>
     
     <item>
+      <title>Notes on R for Data Science</title>
+      <link>/2018/pages/r4ds-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/r4ds-notes/</guid>
+      <description>Visualization Other resources:
+ All the graph things Stat 545. Jenny Bryan.   Tibbles Why might you want to create non-syntactic variable names? Since variable names are often used as in plots (e.g. axis-titles) or headers in tables, where having spaces or other characters that are invalid R variable names is useful. Those functions will have ways to use text other than the column, but using the non-syntactic variable name can be convenient.</description>
+    </item>
+    
+    <item>
       <title>Onboarding</title>
       <link>/2018/pages/onboarding/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
