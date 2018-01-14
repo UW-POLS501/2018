@@ -21,16 +21,7 @@ weeks:
       - '*QSS* Ch 2. "Causality"'
       - '*R4DS* Ch 8. "[Project](http://r4ds.had.co.nz/workflow-projects.html)"'
       - 'Wickham H (2010). "A layered grammar of graphics." *Journal of Computational and Graphical Statistics*, [doi:10.1198/jcgs.2009.07098](https://doi.org/10.1198/jcgs.2009.07098).'
-      after:
-      - 'Bertrand M and Mullainathan S (2004). "Are Emily and Greg More Employable Than
-Lakisha and Jamal? A Field Experiment on Labor Market Discrimination." *American
-Economic Review*, [doi:10.1257/0002828042002561](https://doi.org/10.1257/0002828042002561)'
-      - 'Gerber AS, Green DP and Larimer CW (2008). "Social Pressure and Voter Turnout:
-Evidence from a Large-Scale Field Experiment." *American Political Science
-Review*, [doi:10.1017/s000305540808009x](https://doi.org/10.1017/s000305540808009x)'
-      - 'Card D and Krueger AB (2000). "Minimum Wages and Employment: A Case Study of the
-Fast-Food Industry in New Jersey and Pennsylvania: Reply." *American Economic
-Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
+      after: []
       description: ""
     - date: '2018-01-12'
       type: lab
@@ -43,8 +34,10 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
     classes:
     - type: class
       date: '2018-01-16'
-      readings:
-      description: "Data wrangling"
+      readings: 
+      - EGAP, [10 Things to Know About Causal Inference](http://egap.org/methods-guides/10-things-you-need-know-about-causal-inference).
+      - EGAP, [http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y](http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y)
+      description: "Data wrangling and Causal Inference review"
     - type: lab
       date: '2018-01-19'
       readings:
@@ -62,9 +55,13 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       readings:
       - '*QSS* Ch 3. "Measurement"'
       - '*R4DS* Ch. 7. "[Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html)"'
-      additional:
-      - 'Lyall J, Blair G and Imai K (2013). "Explaining Support for Combatants during Wartime: A Survey Experiment in Afghanistan." *American Political Science Review*, [doi:10.1017/s0003055413000403](https://doi.org/10.1017/s0003055413000403).'
-      - 'Blair G, Imai K and Lyall J (2014). "Comparing and Combining List and Endorsement Experiments: Evidence from Afghanistan." *American Journal of Political Science*, [doi:10.1111/ajps.12086](https://doi.org/10.1111/ajps.12086).'
+      - >-
+          Peng, Roger. [Exploratory Data Analysis in R](https://leanpub.com/exdata). 
+          Chapters "5: Exploratory Data", "6: Principles of Analytic Graphics", 
+          "12: Hierarchical Clustering", "13: K-Means Clustering", "14: Dimension Reduction".
+      - Cohn, Nate. "[Explaining Online Panels and the 2014 Midterms](https://www.nytimes.com/2014/07/28/upshot/explaining-online-panels-and-the-2014-midterms.html)". *New York Times*. 2014-07-27.
+      - Gelman, Andrew. "[Modern polling needs innovation, not traditionalism](https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/04/modern-polling-requires-both-sampling-and-adjustment). *Washington Post*, 2014-08-04"
+      - Rothschild, David. "[All polls are non-probability to varying degrees](https://www.huffingtonpost.com/entry/all-polls-are-non-probability-to-varying-degrees_us_57d02931e4b0f831f70653ce). *Huffington Post*, 2016-09-07."
       description: "Measurement"
     - type: lab
       date: '2018-01-26'
@@ -76,10 +73,6 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-01-30'
       readings:
       - '*QSS* Ch 4. "Prediction"'
-      additional:
-      - 'Todorov A, Mandisodza AN, Goren A and Hall CC (2005). "Inferences of Competence from Faces Predict Election Outcomes." *Science*, [doi:10.1126/science.1110589](https://doi.org/10.1126/science.1110589).'
-      - 'Chattopadhyay R and Duflo E (2004). "Women as Policy Makers: Evidence from a Randomized Policy Experiment in India." *Econometrica*,[doi:10.1111/j.1468-0262.2004.00539.x](https://doi.org/10.1111/j.1468-0262.2004.00539.x).'
-      - 'Eggers AC and Hainmueller J (2009). "MPs for Sale? Returns to Office in Postwar British Politics." *American Political Science Review*, [doi:10.1017/s0003055409990190](https://doi.org/10.1017/s0003055409990190).'
       description: "Prediction"
     - type: lab
       date: '2018-02-02'
@@ -95,9 +88,6 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-02-06'
       readings:
       - '*QSS* Ch 6. "Probability"'
-      additional:
-      - 'Stark PB (2010). "Null and vetoed: Chance." *Chance*, [doi:10.1007/s00144-010-0034-x](https://doi.org/10.1007/s00144-010-0034-x).'
-      - 'Imai K and Khanna K (2016). "Improving Ecological Inference by Predicting Individual Ethnicity from Voter Registration Records." _Political Analysis_, [doi:10.1093/pan/mpw001](https://doi.org/10.1093/pan/mpw001).'
       description: ""      
     - type: lab
       date: '2018-02-09'
@@ -131,8 +121,7 @@ Review*, [doi:10.1257/aer.90.5.1397](https://doi.org/10.1257/aer.90.5.1397)'
       date: '2018-02-27'
       readings:
       - '*QSS* Ch 7.3 "Linear Regression Model with Uncertainty"'
-      additional:
-      - 'Gerber AS, Green DP and Larimer CW (2008). "Social Pressure and Voter Turnout: Evidence from a Large-Scale Field Experiment." *American Political Science Review*, [doi:10.1017/s000305540808009x](https://doi.org/10.1017/s000305540808009x).'      
+      additional: []
       description: "Inference for the Linear Model"
     - type: lab
       date: '2018-03-02'
