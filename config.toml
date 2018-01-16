@@ -11,22 +11,21 @@ publishDir = "docs"
     post = "/:year/:month/:day/:slug/"
     page = "/:slug/"
 
-
 [[menu.main]]
     name = "Schedule"
-    url = "/schedule/"
+    url = "./schedule/"
 
 [[menu.main]]
     name = "Assignments"
-    url = "/assignments/"
+    url = "./assignments/"
 
 [[menu.main]]
     name = "Projects"
-    url = "/projects/"
+    url = "./projects/"
 
 [[menu.main]]
     name = "Pages"
-    url = "/pages/"
+    url = "./pages/"
 
 
 [params]

@@ -138,6 +138,11 @@ text <- tibble(text = text[[1]][, 1]) %>%
 ```
 
 
+```{r}
+
+```
+
+
 ## Encoding
 
 Character encoding can occur when reading data from csv and text files.
@@ -162,6 +167,12 @@ file.path("path", "so", "something")
 file.path("path/to/something")
 ```
 
+### Exercises
+
+1. Programatically create a variable name
+2. Rename a variable
+3. Extract parts from U.S. Congressperson titles, e.g. "Ryan (R-WI)"
+4. Find all .csv files in a list of names.
 
 
 # Dates and Times
