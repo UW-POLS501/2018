@@ -1,0 +1,202 @@
+---
+title: Supplementary Notes for *R for Data Science*
+author: Jeffrey Arnold
+editor_options: 
+  chunk_output_type: console
+---
+
+# Data Visualization
+
+# Workflow: basics
+
+# Data Transformation
+
+# Exploratory Data Analysis
+
+# Workflow: Projects
+
+# Variable names in R
+
+# Tibbles
+
+- What can variables be named in R?
+- What are non-syntactic variables?
+
+# Data import
+
+- What are csv files?
+- How does a csv reader determine the types of variables?
+- Read Stata and SPSS files
+
+## Notes
+
+Also see 
+
+# Tidy data
+
+Objectives
+
+- Describe what "tidy data" frame is and why it is useful
+- Describe when non-tidy data formats may be useful
+- Convert data from long to wide formats using `spread()` and `gather()`
+- Combine and split variables using `unite()` and `gather()`
+
+## Notes
+
+- This is an especially import chapter. Read it carefully.
+
+- What is the difference between data for storage and for analysis? Why might analytical data not be in a tidy format?
+- COW Data - What format is it?
+
+## Summarize multiple variables
+
+Reshaping a data frame to a long format with columns for variables and values is a convenient format to calculate summary statistics for multiple variables.
+```{r results='asis'}
+library("tidyverse")
+library("gapminder")
+
+gapminder_summary <-
+  gapminder %>%
+  select(lifeExp, pop, gdpPercap) %>%
+  gather(variable, value) %>%
+  group_by(variable) %>%
+  summarise(mean = mean(value), sd = sd(value))
+gapminder_summary
+```
+
+If necessary, the data can be reshaped so each (variable, statistic) combination is a column:
+```{r}
+gapminder_summary %>%
+  gather(stat, value, -variable) %>%
+  # create column with columns variable, stat, value
+  unite(variable_stat, variable, stat) %>%
+  # combine variable and stats into a single column
+  spread(variable_stat, value)
+  # spread into a single column
+```
+
+An alternative method to summarize multiple variables is to use the `summarise_at` function:
+```{r}
+summarise_at(gapminder, vars(gdpPercap, lifeExp, pop), 
+             funs(mean, sd))
+```
+
+## Faceted Variables
+
+If multiple variables need to be plotted, an alternative to creating multiple plots is to create a long data frame with a variable column and then facet by variable. 
+For example, to plot the distribution of several variables in the same plot:
+```{r}
+library("tidyverse")
+library("gapminder")
+
+gapminder_long <-
+  gapminder %>%
+  select(lifeExp, pop, gdpPercap) %>%
+  gather(variable, value)
+
+ggplot(gapminder_long, aes(x = value)) +
+  geom_density() +
+  facet_wrap(~ variable, scales = "free", ncol = 1)
+  scale_x_log10()
+
+
+```
+
+
+# Character vectors
+
+- What is character encoding?
+- What are escape sequences?
+- What is a regular expression?
+
+## Regular Expressions
+
+Know what they are ... 
+
+- match patterns
+- find and replace patterns of strings 
+- extract parts from string
+
+
+Examples of uses:
+
+- match filenames
+- filter character vectors
+- select columns using `match()`
+- rename column names using `rename_all()`
+
+```{r}
+text <- readLines(system.file("extdata", "federalist", "fp01.txt", 
+                              package = "qss")) %>%
+  str_c(collapse = " ") %>%
+  str_match_all("[A-Za-z]+") 
+
+text <- tibble(text = text[[1]][, 1]) %>%
+  mutate(text = str_to_lower(text)) %>%
+  count(text) %>%
+  arrange(desc(n))
+```
+
+
+## Encoding
+
+Character encoding can occur when reading data from csv and text files.
+
+Character encoding problems will occur at some point. It is becoming less of an issue due to a standardization to UTF-8, but it still occurs frequently.
+The most likely encoding that you will encounter (if working with European texts) is Windows-1252 (CP-1252) or ISO-8859-1.
+
+## Escape sequences
+
+Certain characters preceeded by a backslash are treated specially. The most common are: `\n` (new-line), `\t` (tab).
+
+Use a double-backslash `\\` for backslash in character vectors.
+
+One common error is using a backslash in Windows file paths, which results in an error:
+```{r error=TRUE}
+"path\to\something"
+```
+Escaping the backslash will work, but won't work on MacOS or Linux.
+It is better to either always use forward-slashes or `file.path` when writing paths in R.
+```{r}
+file.path("path", "so", "something")
+file.path("path/to/something")
+```
+
+
+
+# Dates and Times
+
+
+- Convert date vectors to and from strings
+- How are dates stored?
+
+Date-time variables are almost always a pain to work with.
+Common issues include the irregularity of months and time-zones.
+
+Some alternative date and time packages
+
+- What is the format of dates?
+- Convert to and from dates
+- Time-zones and such
+
+# Factors
+
+- Difference between character vector and factor?
+- When to use factors?
+
+    - You need to store metadata, e.g. levels
+    - Control over the order of categories for plotting in ggplot
+    - Models, e.g. `lm`
+
+- http://stat545.com/block029_factors.html
+
+# Lists and Vectors
+
+- Lists vs. atomic vectors
+- Matrices vs. data frames
+- Issues with floating point numbers? Why are they called "double" in tidyverse functions? 
+
+When to use lists? If you have several variables 
+
+
+
