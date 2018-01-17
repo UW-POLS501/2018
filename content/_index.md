@@ -128,6 +128,10 @@ Reserve emails to the instructors for personal matters.
 
 ## Errata
 
+### Changes
+
+A summary of changes to the syllabus and schedule are posted in the 
+[CHANGELOG/](/pages/CHANGELOG)
 
 ### Resources
 
