@@ -5,3 +5,24 @@ weight: 20
 dateDue: 2018-01-23T16:30:00
 assigned: 2018-01-16
 ---
+
+In one to two paragraphs propose a research project for this course. 
+State your research question. 
+Describe what data you will be using to address that question.
+
+1. Address any comments from the first proposal.
+2. What is your research question or puzzle?
+4. If you have a clear question: is it descriptive, predictive, or causal (or some combination of them).
+    What is the outcome variable of interest? 
+    What are the explanatory variables?
+    If causal, what is your identification strategy (of the few methods you've seen thus far).
+5. What data will you be using? What is the location of the data? 
+Include links to the data. Will your data be coming from one of many sources? What format(s) are the data in? How do you intend to operationalize the concepts in your question with the data at hand?
+6. What do you expect to be the problems you will have to overcome in the analysis? 
+
+Try to answer these questions as best as possible. 
+If you don’t have an answer yet, state it.
+We’ll discuss and resolve these issues in the comments.
+If you are having problems describe them; that’s why item 6 is there.
+Research projects are an iterative and stochastic process.
+The purpose of these assignments is to focus you on certain parts, find the problems and overcome them.

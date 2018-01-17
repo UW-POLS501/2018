@@ -36,3 +36,6 @@ Students will work on the project throughout the quarter, with a series of assig
 
 # Git Submission Process
 
+# Schedule
+
+Additionally there will be check-ins in weeks 
