@@ -17,6 +17,8 @@ assigned: 2018-01-16
   2. Title it "Review Project Proposal II"
   3. Assign the issue to `@jrnold` and `@calvinhgarner`
   3. Submit the issue
+  
+See the [Project Workflow](http://127.0.0.1:4321/2018/pages/git-project-workflow/).
 
 # Proposal 
 
