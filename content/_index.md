@@ -5,7 +5,7 @@ title: "POLS/CSSS 501 (2018)"
 
 ## Overview
 
-This course is the first of a two-quarter introductory quantitative methods sequence for Ph.D. students in the social sciences.
+This course is the first of a two-quarter introductory quantitative methods sequence for PhD students in the social sciences.
 Students are introduced to the full stack of skills needed to conduct modern social science data analysis including data visualization, data wrangling, programming for data analysis, reproducible research, probability and statistical inference, linear regression, and causal inference.
 Students will learn these skills while applying them to their own research problem.
 The objective of this course is to provide students with a hands-on introduction and overview of modern social science data analysis and a base of skills to pursue further research in quantitative methods.

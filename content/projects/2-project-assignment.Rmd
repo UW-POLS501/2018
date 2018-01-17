@@ -8,7 +8,7 @@ assigned: 2018-01-16
 
 # Instructions
 
-1. Add a Markdown or RMarkdown file in your named `doc/initial-proposal.md` to your project repository.
+1. Add a Markdown or R Markdown file in your named `doc/initial-proposal.md` to your project repository.
 2. Answer the questions in the next section in that file.
 2. To submit the assignment, 
 
@@ -31,7 +31,7 @@ Describe what data you will be using to address that question.
 3. If you have a clear question: is it descriptive, predictive, or causal (or some combination of them).
     What is the outcome variable of interest? 
     What are the explanatory variables?
-    If causal, what is your identification strategy (of the few methods you've seen thus far).
+    If causal, what is your identification strategy (of the few methods you have seen thus far).
 4. What data will you be using? What is the location of the data? 
 Include links to the data. Will your data be coming from one of many sources? What format(s) are the data in? How do you intend to operationalize the concepts in your question with the data at hand?
 5. What do you expect to be the problems you will have to overcome in the analysis? 

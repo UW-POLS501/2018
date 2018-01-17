@@ -11,5 +11,3 @@ editor_options:
 Articles and books references in this course. Download these references as bibtex file [here](/pols501.bib).
 
 ----
-
-<!-- -->

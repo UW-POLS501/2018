@@ -9,7 +9,7 @@ output: html_document
 
 A **statistic** is a function of data.[^sample]
 That's it. Any function of data is a statistic. 
-Of course, that doesn't mean that all statistics are equally useful for understanding data, or equally easy to work with. 
+Of course, that does not mean that all statistics are equally useful for understanding data, or equally easy to work with. 
 
 
 [^sample]: After introducing *sampling*, we will distinguish between **sample** and **populations**.

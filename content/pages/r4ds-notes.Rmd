@@ -54,7 +54,7 @@ However, `tibble` objects never partially match column names with `$`:
 library("tibble")
 as.tibble(d)$foo
 ```
-Additionally, `[[` doesn't partially match:
+Additionally, `[[` does not partially match:
 ```{r}
 d[["foo"]]
 ```
@@ -105,7 +105,7 @@ Non-tidy data
 - Corpus and text data is often stored in sparse Matrices https://cran.r-project.org/web/packages/tm/tm.pdf
 - Graphical data has its own format: http://igraph.org/r/doc/
 
-Replication datatsets and datasets used in analysis are often non-tidy. Why?
+Replication datasets and datasets used in analysis are often non-tidy. Why?
 
 
 # Dates and Times
@@ -116,19 +116,18 @@ Replication datatsets and datasets used in analysis are often non-tidy. Why?
 - The history of the tz database are themselves interesting: https://en.wikipedia.org/wiki/Tz_database
 - [A literary appreciation of the Olson/Zoneinfo/tz database]( https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/)
 
-I think time-zones are likely a point for social science research in and of themselves. Policy choices. Coordination. Regression discontinuity designs. Just sayin...
 
 # Relational Data
 
 - What is relational data?
 - What is a primary key?
 - List and describe the types of joins
-- What are set union, interection, complement, and difference? 
+- What are set union, intersection, complement, and difference? 
 
 
 [nycflights13](https://cran.r-project.org/web/packages/nycflights13/index.html) is an example of a **data-only** R package. R packages can contain both functions and data.
-Since data-sets can get large, often they can be packaged as their own dataset. These sorts of data-only R packages make it convenient for R users to access your data, but it should not be the only way you provide your research data. Not everyone uses R, so the original data should be provided in a program agnostic format (e.g. csv files). This also holds for those using Stata; they should not be distributing data in `.dta` format files specific to Stata (even if as we saw earlier, other programs can read that data.)
-Another example of a data-only R package is [gapminder](https://cran.r-project.org/package=gapminder).
+Since data-sets can get large, often they can be packaged as their own dataset. These sorts of data-only R packages make it convenient for R users to access your data, but it should not be the only way you provide your research data. Not everyone uses R, so the original data should be provided in a program agnostic format (e.g. CSV files). This also holds for those using Stata; they should not be distributing data in `.dta` format files specific to Stata (even if as we saw earlier, other programs can read that data.)
+Another example of a data-only R package is the [gapminder](https://cran.r-project.org/package=gapminder) package.
 
 
 # Strings
@@ -180,8 +179,8 @@ Refer to the [lubridate](https://cran.r-project.org/web/packages/lubridate/vigne
 Why does floating point math matter? 
 For 99% of the work you are likely to do as an applied social scientist, you need to know it.
 Someone else has written the numerical methods and (hopefully) accounted for numerical issues.
-However, if you aren't even aware that "floating point numbers" are a "thing", if something goes wrong, it will seem like magic.
-Also, at least being aware of these problems will help you understand error messages from optimization routines that complaing of "numerical precision".
+However, if you are not even aware that "floating point numbers" are a "thing", if something goes wrong, it will seem like magic.
+Also, at least being aware of these problems will help you understand error messages from optimization routines that complaining of "numerical precision".
 
 Computerphile has a good video on [Floating Point Numbers](https://youtu.be/PZRI1IfStY0).
 
@@ -233,7 +232,7 @@ For example, linear regression is a special case of GLM or Gaussian Processes et
 
 - preference for easy to explain models (though I think that's wrong--most people can't visualize high-dimensional space well, and interpret results marginally even though they are conditional)
 - status-quo bias and path dependence combined with lack of knowledge of work outside the field and median lack of technical ability to understand or use these models.
-- the most principled reason is that those modre complicated models really excel in prediction. If we take an agnostic approach to regression, as in the Angrist and Pischke books, then regression isn't being used to fit $f(y | x)$, its being used to fit $E(f(y | x))$, and more specifically to get some sort of average effect for a change in a specific variable.
+- the most principled reason is that those more complicated models really excel in prediction. If we take an agnostic approach to regression, as in the Angrist and Pischke books, then regression is not being used to fit $f(y | x)$, its being used to fit $E(f(y | x))$, and more specifically to get some sort of average effect for a change in a specific variable.
 
 # Model basics
 

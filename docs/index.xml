@@ -27,7 +27,7 @@ State a research question. Describe what data you will use to answer the questio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/projects/2-project-assignment/</guid>
-      <description>Instructions Add a Markdown or RMarkdown file in your named doc/initial-proposal.md to your project repository. Answer the questions in the next section in that file. To submit the assignment,
+      <description>Instructions Add a Markdown or R Markdown file in your named doc/initial-proposal.md to your project repository. Answer the questions in the next section in that file. To submit the assignment,
  Commit and push all changes GitHub Open an issue in your project repository Title it “Review Project Proposal II” Assign the issue to @jrnold and @calvinhgarner Submit the issue
   See the Project Workflow.
  Proposal In one to two paragraphs propose a research project for this course.</description>
@@ -84,7 +84,7 @@ State a research question. Describe what data you will use to answer the questio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/assignments/assignment-1/</guid>
-      <description>Fork https://github.com/UW-POLS501/2018-assignment-1 Write your exercise answers in 2018-assignment-1.Rmd Commit both the Rmd and the generated html files When ready, create a pull request with the title “Initial submission” Create a pull request  We will cover the submission at the start of class on Tuesday.
+      <description>Fork https://github.com/UW-POLS501/2018-assignment-1 Write your exercise answers in 2018-assignment-1.Rmd Commit both the R Markdown and the generated HTML files When ready, create a pull request with the title “Initial submission” Create a pull request  We will cover the submission at the start of class on Tuesday.
 Exercise 1 QSS Exercise 1.5.1
  Exercise 2 QSS Exercise 1.5.2
  Exercise 3 QSS Exercise 2.8.3
@@ -190,8 +190,10 @@ Relationship between GitHub and Local Git Projects  References  Jenny Bryan, Hap
       
       <guid>/2018/pages/git-assignment-workflow/</guid>
       <description>Cloning, Pull Requests, Forking, Pulling, and Pushing See the Happy Git and GitHub for the useR chapter Fork a repo.
- Instructions Go to the course website, click Assignments.   Scroll down to the Assignments section, click on the link to the assignment under Instructions and Submissions.
- Click on the Fork button to fork the repository to your Github account.   Click Clone or download.</description>
+ Instructions Go to the course website, click Assignments.
+ Scroll down to the Assignments section, click on the link to the assignment under Instructions and Submissions.
+ Click on the Fork button to fork the repository to your GitHub account.
+ Click Clone or download.</description>
     </item>
     
     <item>

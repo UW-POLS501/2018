@@ -80,7 +80,7 @@ create_assignment_key_issue <- function(i) {
   gh("POST /repos/:owner/:repo/issues",
      owner = ORG, repo = REPOS,
      title = glue("Write solutions to assignment {i}"),
-     body = glue("Solutions should go in the respository ",
+     body = glue("Solutions should go in the repository ",
                  "`UW-POLS501/assignment-{i}-solutions`.",
                  "Students should not have access to it until solutions are released."),
                  .sep = "\n")
