@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>Getting Help with R</title>
+      <link>/2018/pages/help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/help/</guid>
+      <description>A good place to start is Rstudio’s guide for getting help with R
+Asking for Help When asking for help with R it is important to at least
+Include the exact code that you ran The error message that you got  Without the code and the error message it can be hard to impossible to diagnose the problem and provide a solution. Questions such as “This isn’t working” or even “I’m getting this error message” aren’t useful without the code and error message.</description>
+    </item>
+    
+    <item>
       <title>Git and GitHub</title>
       <link>/2018/pages/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
