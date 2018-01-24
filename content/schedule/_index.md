@@ -14,6 +14,9 @@ weeks:
       - '*R4DS* Ch 3. "[Data Visualization](http://r4ds.had.co.nz/data-visualisation.html)"'      
       - '*R4DS* Ch 4. "[Workflow: basics](http://r4ds.had.co.nz/workflow-basics.html)"'
       - '*R4DS* Ch 5. "[Workflow: scripts](http://r4ds.had.co.nz/workflow-scripts.html)"'
+      readings:
+      - >-
+        *R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"
       description: ""
 
   - week: 2
@@ -33,9 +36,14 @@ weeks:
     - date: '2018-01-12'
       type: lab
       readings:
-      - '*R4DS* Ch. 5. "[Data Transformation](http://r4ds.had.co.nz/transform.html)"'
-      - '*R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"'                   - '*R4DS* Ch. 12 "[Tidy Data](http://r4ds.had.co.nz/tidy-data.html)"'
-      - 'Wickham H (2014). "Tidy Data." *Journal of Statistical Software* [doi: 10.18637/jss.v059.i10](https://doi.org/10.18637/jss.v059.i10)'
+      - >-
+        *R4DS* Ch. 5. "[Data Transformation](http://r4ds.had.co.nz/transform.html)"
+      - >-
+        *R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"
+      - >-
+        *R4DS* Ch. 12 "[Tidy Data](http://r4ds.had.co.nz/tidy-data.html)"
+      - >-
+        Wickham H (2014). "Tidy Data." *Journal of Statistical Software* [doi: 10.18637/jss.v059.i10](https://doi.org/10.18637/jss.v059.i10)
       description: ""
       
   - week: 3
@@ -48,14 +56,15 @@ weeks:
       description: "Data wrangling and Causal Inference review"
     - type: lab
       date: '2018-01-19'
-      readings:
-      - '*R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"'
+
       readings:
       - '*R4DS* Ch. 11 "[Data Import](http://r4ds.had.co.nz/data-import.html)"'
       - '*R4DS* Ch. 13. "[Relational Data](http://r4ds.had.co.nz/relational-data.html)"'
       - '*R4DS* Ch. 14. "[Strings](http://r4ds.had.co.nz/strings.html)" (skim)'
       - '*R4DS* Ch. 15. "[Factors](http://r4ds.had.co.nz/factors.html)" (skim)'
-      - '*R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)'         description: "Data wrangling"
+      - >-
+        *R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)
+      description: "Data wrangling"
       
     - type: lab
       date: '2018-01-19'
