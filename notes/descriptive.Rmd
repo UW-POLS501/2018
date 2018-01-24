@@ -1,0 +1,47 @@
+---
+title: "Descriptive Statistics"
+author: "Jeffrey Arnold"
+date: "1/2/2018"
+output: html_document
+---
+
+# Descriptive Statistics
+
+A **statistic** is a function of data.[^sample]
+That's it. Any function of data is a statistic. 
+Of course, that does not mean that all statistics are equally useful for understanding data, or equally easy to work with. 
+
+
+[^sample]: After introducing *sampling*, we will distinguish between **sample** and **populations**.
+  In **inference**, we will use statistics of the sample to infer parameters of a population.
+  However, it is useful to remember that a statistic is defined indepenently of its inferential purposes,
+  even if many of the statistics that are introduced in this section and a commonly used are 
+  used because of their inferrential properties.
+
+What is the purpose of the descriptive statistics? To understand data. 
+But what does it mean to *understand*? And how and what statistics aid in that?
+
+The fundamental problem in descriptive statistics is one of *dimension reduction*.
+A dataset almost certainly contains more numbers that can be held in short term memory, so how can it be reduced to a form that can be understood?
+There are two main approaches:
+
+1. *summary statistics* Reduce the data to a few numbers that represent the 
+2. *data visualization* Convert the data a form (visual stimuli) that allow humans to process larger amounts .[^senses]
+
+[^senses]: More generally, the idea is to convert data to a form that human senses can process rapidly. In practice, this is usually,
+  visual. [Data sonification or aurlization](https://en.wikipedia.org/wiki/Sonification) converts data to sounds.  If one was so inclined, one could
+  convert data to forms amenable to touch, taste, or smell. While these would make for interesting art projects, in most cases they seem less
+  powerful than visualization. However, if data analysis was conducted by dogs, you could imagine that data olfactorization would be the primary means
+  of conveying and understanding datasets.
+
+Summary statistics and data visualization are not mutually exclusive. In particular, many data visualization methods display 
+a some summary statistics of the data rather than the original data itself, with histograms and box plots being notable examples.
+
+    
+## Location
+
+
+## Spread
+
+
+## Shape

@@ -1,7 +1,7 @@
 ---
 title: "Proposal"
 Draft:  false
-dateDue: 2018-01-16T16:30:00-07:00
+dateDue: 2018-01-16T16:30:00
 assigned: 2018-01-08
 weight: 10
 ---

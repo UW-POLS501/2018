@@ -1,6 +1,44 @@
 ---
-title: "Proposal II and Data Description"
-Draft:  true
-dateDue: null
+title: "Proposal II"
+Draft:  false
 weight: 20
+dateDue: 2018-01-23T16:30:00
+assigned: 2018-01-16
 ---
+
+# Instructions
+
+1. Add a Markdown or R Markdown file in your named `doc/initial-proposal.md` to your project repository.
+2. Answer the questions in the next section in that file.
+2. To submit the assignment, 
+
+  1. Commit and push all changes GitHub
+  1. Open an issue in your project repository
+  2. Title it "Review Project Proposal II"
+  3. Assign the issue to `@jrnold` and `@calvinhgarner`
+  3. Submit the issue
+  
+See the [Project Workflow](http://127.0.0.1:4321/2018/pages/git-project-workflow/).
+
+# Proposal 
+
+In one to two paragraphs propose a research project for this course. 
+State your research question. 
+Describe what data you will be using to address that question.
+
+1. Address any comments from the first proposal.
+2. What is your research question or puzzle?
+3. If you have a clear question: is it descriptive, predictive, or causal (or some combination of them).
+    What is the outcome variable of interest? 
+    What are the explanatory variables?
+    If causal, what is your identification strategy (of the few methods you have seen thus far).
+4. What data will you be using? What is the location of the data? 
+Include links to the data. Will your data be coming from one of many sources? What format(s) are the data in? How do you intend to operationalize the concepts in your question with the data at hand?
+5. What do you expect to be the problems you will have to overcome in the analysis? 
+
+Try to answer these questions as best as possible. 
+If you don’t have an answer yet, state it.
+We’ll discuss and resolve these issues in the comments.
+If you are having problems describe them; that’s why item 6 is there.
+Research projects are an iterative and stochastic process.
+The purpose of these assignments is to focus you on certain parts, find the problems and overcome them.

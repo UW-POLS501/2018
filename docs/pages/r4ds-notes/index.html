@@ -98,7 +98,7 @@
 as.tibble(d)$foo</code></pre>
 <pre><code>## Warning: Unknown or uninitialised column: &#39;foo&#39;.</code></pre>
 <pre><code>## NULL</code></pre>
-<p>Additionally, <code>[[</code> doesn’t partially match:</p>
+<p>Additionally, <code>[[</code> does not partially match:</p>
 <pre class="r"><code>d[[&quot;foo&quot;]]</code></pre>
 <pre><code>## NULL</code></pre>
 <p><strong>Partial matching is bad; never do it. Tibbles prevent you from doing it.</strong></p>
@@ -136,7 +136,7 @@ as.tibble(d)$foo</code></pre>
 <li>Corpus and text data is often stored in sparse Matrices <a href="https://cran.r-project.org/web/packages/tm/tm.pdf" class="uri">https://cran.r-project.org/web/packages/tm/tm.pdf</a></li>
 <li>Graphical data has its own format: <a href="http://igraph.org/r/doc/" class="uri">http://igraph.org/r/doc/</a></li>
 </ul>
-<p>Replication datatsets and datasets used in analysis are often non-tidy. Why?</p>
+<p>Replication datasets and datasets used in analysis are often non-tidy. Why?</p>
 </div>
 <div id="dates-and-times" class="section level1">
 <h1>Dates and Times</h1>
@@ -147,7 +147,6 @@ as.tibble(d)$foo</code></pre>
 <li>The history of the tz database are themselves interesting: <a href="https://en.wikipedia.org/wiki/Tz_database" class="uri">https://en.wikipedia.org/wiki/Tz_database</a></li>
 <li><a href="https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/">A literary appreciation of the Olson/Zoneinfo/tz database</a></li>
 </ul>
-<p>I think time-zones are likely a point for social science research in and of themselves. Policy choices. Coordination. Regression discontinuity designs. Just sayin…</p>
 </div>
 <div id="relational-data" class="section level1">
 <h1>Relational Data</h1>
@@ -155,9 +154,9 @@ as.tibble(d)$foo</code></pre>
 <li>What is relational data?</li>
 <li>What is a primary key?</li>
 <li>List and describe the types of joins</li>
-<li>What are set union, interection, complement, and difference?</li>
+<li>What are set union, intersection, complement, and difference?</li>
 </ul>
-<p><a href="https://cran.r-project.org/web/packages/nycflights13/index.html">nycflights13</a> is an example of a <strong>data-only</strong> R package. R packages can contain both functions and data. Since data-sets can get large, often they can be packaged as their own dataset. These sorts of data-only R packages make it convenient for R users to access your data, but it should not be the only way you provide your research data. Not everyone uses R, so the original data should be provided in a program agnostic format (e.g. csv files). This also holds for those using Stata; they should not be distributing data in <code>.dta</code> format files specific to Stata (even if as we saw earlier, other programs can read that data.) Another example of a data-only R package is <a href="https://cran.r-project.org/package=gapminder">gapminder</a>.</p>
+<p><a href="https://cran.r-project.org/web/packages/nycflights13/index.html">nycflights13</a> is an example of a <strong>data-only</strong> R package. R packages can contain both functions and data. Since data-sets can get large, often they can be packaged as their own dataset. These sorts of data-only R packages make it convenient for R users to access your data, but it should not be the only way you provide your research data. Not everyone uses R, so the original data should be provided in a program agnostic format (e.g. CSV files). This also holds for those using Stata; they should not be distributing data in <code>.dta</code> format files specific to Stata (even if as we saw earlier, other programs can read that data.) Another example of a data-only R package is the <a href="https://cran.r-project.org/package=gapminder">gapminder</a> package.</p>
 </div>
 <div id="strings" class="section level1">
 <h1>Strings</h1>
@@ -189,7 +188,7 @@ as.tibble(d)$foo</code></pre>
 <li>What is the difference between numeric vectors and integer vectors?</li>
 <li>List several problems that may occur with floating point arithmetic</li>
 </ul>
-<p>Why does floating point math matter? For 99% of the work you are likely to do as an applied social scientist, you need to know it. Someone else has written the numerical methods and (hopefully) accounted for numerical issues. However, if you aren’t even aware that “floating point numbers” are a “thing”, if something goes wrong, it will seem like magic. Also, at least being aware of these problems will help you understand error messages from optimization routines that complaing of “numerical precision”.</p>
+<p>Why does floating point math matter? For 99% of the work you are likely to do as an applied social scientist, you need to know it. Someone else has written the numerical methods and (hopefully) accounted for numerical issues. However, if you are not even aware that “floating point numbers” are a “thing”, if something goes wrong, it will seem like magic. Also, at least being aware of these problems will help you understand error messages from optimization routines that complaining of “numerical precision”.</p>
 <p>Computerphile has a good video on <a href="https://youtu.be/PZRI1IfStY0">Floating Point Numbers</a>.</p>
 <p>Be careful testing equality with floating point numbers:</p>
 <pre class="r"><code>0.1 + 0.2 == 0.3</code></pre>
@@ -222,7 +221,7 @@ as.tibble(d)$foo</code></pre>
 <ul>
 <li>preference for easy to explain models (though I think that’s wrong–most people can’t visualize high-dimensional space well, and interpret results marginally even though they are conditional)</li>
 <li>status-quo bias and path dependence combined with lack of knowledge of work outside the field and median lack of technical ability to understand or use these models.</li>
-<li>the most principled reason is that those modre complicated models really excel in prediction. If we take an agnostic approach to regression, as in the Angrist and Pischke books, then regression isn’t being used to fit <span class="math inline">\(f(y | x)\)</span>, its being used to fit <span class="math inline">\(E(f(y | x))\)</span>, and more specifically to get some sort of average effect for a change in a specific variable.</li>
+<li>the most principled reason is that those more complicated models really excel in prediction. If we take an agnostic approach to regression, as in the Angrist and Pischke books, then regression is not being used to fit <span class="math inline">\(f(y | x)\)</span>, its being used to fit <span class="math inline">\(E(f(y | x))\)</span>, and more specifically to get some sort of average effect for a change in a specific variable.</li>
 </ul>
 </div>
 <div id="model-basics-1" class="section level1">
@@ -242,7 +241,6 @@ as.tibble(d)$foo</code></pre>
 
 </main>
 
-    </main>
     <footer class="footer bg-light text-muted">
       <div class="container">
         <p>Made with <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>,

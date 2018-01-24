@@ -1,6 +1,6 @@
 ---
 title: "Peer Review"
-Draft:  true
+weight: 55
 dateDue: null
-weight: 60
 ---
+

@@ -23,11 +23,11 @@
   </url>
   
   <url>
-    <loc>/2018/projects/6-project-assignment/</loc>
+    <loc>/2018/projects/peer-review/</loc>
   </url>
   
   <url>
-    <loc>/2018/projects/7-project-assignment/</loc>
+    <loc>/2018/projects/final-project/</loc>
   </url>
   
   <url>
@@ -75,8 +75,16 @@
   </url>
   
   <url>
+    <loc>/2018/pages/changelog/</loc>
+  </url>
+  
+  <url>
     <loc>/2018/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2018/pages/help/</loc>
   </url>
   
   <url>
