@@ -2,6 +2,7 @@
 aliases: ["/schedule/"]
 type: schedule
 weeks:
+
   - week: 1
     classes:
     - date: '2018-01-05'
@@ -13,7 +14,11 @@ weeks:
       - '*R4DS* Ch 3. "[Data Visualization](http://r4ds.had.co.nz/data-visualisation.html)"'      
       - '*R4DS* Ch 4. "[Workflow: basics](http://r4ds.had.co.nz/workflow-basics.html)"'
       - '*R4DS* Ch 5. "[Workflow: scripts](http://r4ds.had.co.nz/workflow-scripts.html)"'
+      readings:
+      - >-
+        *R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"
       description: ""
+
   - week: 2
     classes:
     - date: '2018-01-09'
@@ -26,29 +31,45 @@ weeks:
       - >-
         Wickham H (2010). "A layered grammar of graphics." *Journal of Computational and Graphical Statistics*, [doi:10.1198/jcgs.2009.07098](https://doi.org/10.1198/jcgs.2009.07098).
       after: []
+
     - date: '2018-01-12'
       type: lab
       readings:
-      - '*R4DS* Ch. 5. "[Data Transformation](http://r4ds.had.co.nz/transform.html)"'
-      - '*R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"'             
-      - '*R4DS* Ch. 12 "[Tidy Data](http://r4ds.had.co.nz/tidy-data.html)"'
-      - 'Wickham H (2014). "Tidy Data." *Journal of Statistical Software* [doi: 10.18637/jss.v059.i10](https://doi.org/10.18637/jss.v059.i10)'
+      - >-
+        *R4DS* Ch. 5. "[Data Transformation](http://r4ds.had.co.nz/transform.html)"
+      - >-
+        *R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"
+      - >-
+        *R4DS* Ch. 12 "[Tidy Data](http://r4ds.had.co.nz/tidy-data.html)"
+      - >-
+        Wickham H (2014). "Tidy Data." *Journal of Statistical Software* [doi: 10.18637/jss.v059.i10](https://doi.org/10.18637/jss.v059.i10)
       description: ""
+      
   - week: 3
     classes:
     - type: class
       date: '2018-01-16'
+      readings: 
+      - EGAP, [10 Things to Know About Causal Inference](http://egap.org/methods-guides/10-things-you-need-know-about-causal-inference).
+      - EGAP, [http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y](http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y)
+      description: "Data wrangling and Causal Inference review"
+    - type: lab
+      date: '2018-01-19'
       readings:
       - '*R4DS* Ch. 11 "[Data Import](http://r4ds.had.co.nz/data-import.html)"'
       - '*R4DS* Ch. 13. "[Relational Data](http://r4ds.had.co.nz/relational-data.html)"'
       - '*R4DS* Ch. 14. "[Strings](http://r4ds.had.co.nz/strings.html)" (skim)'
       - '*R4DS* Ch. 15. "[Factors](http://r4ds.had.co.nz/factors.html)" (skim)'
-      - '*R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)'     
+
+      - >-
+        *R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)
       description: "Data wrangling"
+      
     - type: lab
       date: '2018-01-19'
       readings: []
-      description: ""      
+      description: ""
+      
   - week: 4
     classes:
     - type: class
@@ -57,6 +78,14 @@ weeks:
       - >-
         *QSS* Ch 3. "Measurement" and *QSS Tidy* [Chapter 3](https://jrnold.github.io/qss-tidy/measurement.html)
       - '*R4DS* Ch. 7. "[Exploratory Data Analysis](http://r4ds.had.co.nz/exploratory-data-analysis.html)"'
+      after:
+      - >-
+          Peng, Roger. [Exploratory Data Analysis in R](https://leanpub.com/exdata). 
+          Chapters "5: Exploratory Data", "6: Principles of Analytic Graphics", 
+          "12: Hierarchical Clustering", "13: K-Means Clustering", "14: Dimension Reduction".
+      - Cohn, Nate. "[Explaining Online Panels and the 2014 Midterms](https://www.nytimes.com/2014/07/28/upshot/explaining-online-panels-and-the-2014-midterms.html)". *New York Times*. 2014-07-27.
+      - Gelman, Andrew. "[Modern polling needs innovation, not traditionalism](https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/04/modern-polling-requires-both-sampling-and-adjustment). *Washington Post*, 2014-08-04"
+      - Rothschild, David. "[All polls are non-probability to varying degrees](https://www.huffingtonpost.com/entry/all-polls-are-non-probability-to-varying-degrees_us_57d02931e4b0f831f70653ce). *Huffington Post*, 2016-09-07."
       description: "Measurement"
     - type: lab
       date: '2018-01-26'
@@ -91,6 +120,7 @@ weeks:
       readings: []
       description: ""      
   - week: 7
+
     classes:
     - type: class
       date: '2018-02-13'
@@ -99,7 +129,8 @@ weeks:
     - type: lab
       date: '2018-02-16'
       readings: []      
-      description: ""      
+      description: ""  
+
   - week: 8
     classes:
     - type: class
@@ -114,6 +145,7 @@ weeks:
       date: '2018-02-23'
       readings: []
       description: ""
+
   - week: 9
     classes:
     - type: class

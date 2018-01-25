@@ -39,7 +39,9 @@ State a research question. Describe what data you will use to answer the questio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/projects/3-project-assignment/</guid>
-      <description></description>
+      <description>Exact instructions of directory organization to follow.
+The purpose of this assignment is to encourage you to find, load, clean, and explore your data before continuing to analysis.
+State your research question, and your expected research design to answer that question. What are your data sources? Cite the data appropriately using name or title of the data set, authors, version, creation date, and persistent data identifier (e.g. DOI) if available or URL if one is not.</description>
     </item>
     
     <item>
@@ -170,7 +172,7 @@ Exercise 1 QSS Exercise 1.5.1
       
       <guid>/2018/pages/changelog/</guid>
       <description> See the GitHub repository the history of changes.
-2018-01-17  Added CHANGELOG file Posted Project Assignment 2  </description>
+2018-01-24  Added Project Assignment 3 Added additional readings that had gotten removed in a previous commit.  2018-01-17  Added CHANGELOG file Posted Project Assignment 2  </description>
     </item>
     
     <item>
