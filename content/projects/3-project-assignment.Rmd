@@ -4,3 +4,21 @@ Draft:  true
 weight: 30
 dateDue: 2018-02-06T16:30:00
 ---
+
+Exact instructions of directory organization to follow. 
+
+The purpose of this assignment is to encourage you to find, load, clean, and explore your data before continuing to analysis. 
+
+1. State your research question, and your expected research design to answer that question.
+2. What are your data sources? Cite the data appropriately using name or title of the data set, authors, version, creation date, and persistent data identifier (e.g. DOI) if available or URL if one is not.
+3. Load, describe, and clean your data. Explain the steps you are taking where approporiate. Some questions to consider are:
+
+  1. Check for missing values. In some cases, some numeric values correspond to 
+      missing values. These are often extremely large or small values. 
+  2. What are types (string, numeric, integer, date, etc.) and
+      anticipated range of values that variables can take? 
+      Do they take those values in the data? 
+  3. What is the unit of observation of your data? What will the unit of observation be for your analysis? Do you need to merge datasets? If so, what is their common identifier?
+      
+4. If possible, produce some summary statistcs and appropropriate plots of the distributions of the variables you expect to use as the response and explanatory variables.
+5. What issues did you encounter in getting and cleaning the data? What issues remain?
