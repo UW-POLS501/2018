@@ -5,34 +5,32 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Data Visualization
+Attached are
 
-# Workflow: basics
+## Data Visualization
 
-# Data Transformation
+## Workflow: basics
 
-# Exploratory Data Analysis
+## Data Transformation
 
-# Workflow: Projects
+## Exploratory Data Analysis
 
-# Variable names in R
+## Workflow: Projects
 
-# Tibbles
+## Variable names in R
+
+## Tibbles
 
 - What can variables be named in R?
 - What are non-syntactic variables?
 
-# Data import
+## Data import
 
 - What are csv files?
 - How does a csv reader determine the types of variables?
 - Read Stata and SPSS files
 
-## Notes
-
-Also see 
-
-# Tidy data
+## Tidy data
 
 Objectives
 
@@ -41,14 +39,14 @@ Objectives
 - Convert data from long to wide formats using `spread()` and `gather()`
 - Combine and split variables using `unite()` and `gather()`
 
-## Notes
 
-- This is an especially import chapter. Read it carefully.
+This is an especially import chapter. Read it carefully.
 
-- What is the difference between data for storage and for analysis? Why might analytical data not be in a tidy format?
-- COW Data - What format is it?
+### Common idioms 
 
-## Summarize multiple variables
+There are a few common idioms that I use `spread()` and `gather()` for.
+
+#### Summarizing multiple variables
 
 Reshaping a data frame to a long format with columns for variables and values is a convenient format to calculate summary statistics for multiple variables.
 ```{r results='asis'}
@@ -81,7 +79,7 @@ summarise_at(gapminder, vars(gdpPercap, lifeExp, pop),
              funs(mean, sd))
 ```
 
-## Faceted Variables
+#### Plotting multiple variable
 
 If multiple variables need to be plotted, an alternative to creating multiple plots is to create a long data frame with a variable column and then facet by variable. 
 For example, to plot the distribution of several variables in the same plot:
@@ -98,33 +96,49 @@ ggplot(gapminder_long, aes(x = value)) +
   geom_density() +
   facet_wrap(~ variable, scales = "free", ncol = 1)
   scale_x_log10()
-
-
 ```
 
 
-# Character vectors
+## Character vectors
 
-- What is character encoding?
-- What are escape sequences?
-- What is a regular expression?
+- Understand what a character vector is and how to use functions in the string
+- Understand what character encodings are and how to 
+- Understand what escape sequences are and how to use them in R character sequences.
+- Understand what regular expressions are and use them to
 
-## Regular Expressions
+    - filter filenames returned by `list.files()`
+    - match variable names in `select()` using the `match` function
+    - filter by patterns in a character vector using `filter` and `str_detect`
+    - replace patterns in strings using `str_replace`
+    - extract information from a character vector using `str_match`
+    
+### Regular expressions
 
-Know what they are ... 
+Match all filenames ending in `.csv` or `.tsv`
+```{r}
+filenames <- c("foo.csv", "foo.tsv", "foo.RData", "foo.dta", "tsv.doc",
+               "csv_filenames.txt")
+# to return a logical vector
+str_detect(filenames, "\\.[ct]sv$")
+# to return the matching elements 
+str_subset(filenames, "\\.[ct]sv$")
+```
 
-- match patterns
-- find and replace patterns of strings 
-- extract parts from string
+Extract the name, party, and state from U.S. Congressperson names formatted according
+to the AP Style:
+```{r}
+congress <- c("Ryan (R-WI)", "Pelosi (D-CA)", "McCarthy (R-CA)", 
+              "Scalise (R-LA)", "Hoyer (D-MD)")
+str_match(congress, "^(.*) \\(([A-Z])-([A-Z][A-Z])\\)")
+```
 
+Turn multiple whitespace values into only one space:
+```{r}
+str_replace_all(c("a a", "a  a", "a   \t    a    a a     "),
+                "\\s+", " ")
+```
 
-Examples of uses:
-
-- match filenames
-- filter character vectors
-- select columns using `match()`
-- rename column names using `rename_all()`
-
+Tokenize a text into "words":
 ```{r}
 text <- readLines(system.file("extdata", "federalist", "fp01.txt", 
                               package = "qss")) %>%
@@ -138,19 +152,14 @@ text <- tibble(text = text[[1]][, 1]) %>%
 ```
 
 
-```{r}
-
-```
-
-
-## Encoding
+### Encoding
 
 Character encoding can occur when reading data from csv and text files.
 
 Character encoding problems will occur at some point. It is becoming less of an issue due to a standardization to UTF-8, but it still occurs frequently.
 The most likely encoding that you will encounter (if working with European texts) is Windows-1252 (CP-1252) or ISO-8859-1.
 
-## Escape sequences
+### Escape sequences
 
 Certain characters preceeded by a backslash are treated specially. The most common are: `\n` (new-line), `\t` (tab).
 
@@ -167,47 +176,41 @@ file.path("path", "so", "something")
 file.path("path/to/something")
 ```
 
-### Exercises
 
-1. Programatically create a variable name
-2. Rename a variable
-3. Extract parts from U.S. Congressperson titles, e.g. "Ryan (R-WI)"
-4. Find all .csv files in a list of names.
+## Dates and Times
 
-
-# Dates and Times
-
-
-- Convert date vectors to and from strings
-- How are dates stored?
+- Be able to convert vectors to and from strings
+- Understand how dates are stored numerically. What is an epoch?
+- What is UTC? 
+- What is an impotant difference between using seconds, minutes, hours or days and
+    using months and years as units of time? 
 
 Date-time variables are almost always a pain to work with.
 Common issues include the irregularity of months and time-zones.
 
-Some alternative date and time packages
 
-- What is the format of dates?
-- Convert to and from dates
-- Time-zones and such
+## Factors
 
-# Factors
+- Understand the difference between character vector and factor and when to use each
 
-- Difference between character vector and factor?
-- When to use factors?
+When to use factors?
 
     - You need to store metadata, e.g. levels
     - Control over the order of categories for plotting in ggplot
     - Models, e.g. `lm`
 
-- http://stat545.com/block029_factors.html
+See the Stat 545 [discussion of factors](http://stat545.com/block029_factors.html).
 
-# Lists and Vectors
+## Lists and Vectors
 
-- Lists vs. atomic vectors
-- Matrices vs. data frames
-- Issues with floating point numbers? Why are they called "double" in tidyverse functions? 
+- What are atomic vectors? What is the difference between lists and atomic vectors?
+- What is `NULL` in R? How do you test for it?
+- What is the difference between a matrix and a data frame? When should you use each?
+- What are floating point numbers? What issues arise with them?
+- Why are floating point numbers sometimes called "double" or use postfix `dbl` in tidyverse functions? 
 
-When to use lists? If you have several variables 
-
-
+When should you use lists? 
+Lists can be used when you have several variables that you want to keep together, or will need to access programmatically in a loop or functionals.
+Oftentimes I get the question, how can a programmatically name variables. 
+This is possible, but almost always the answer is to create a list and save the values in different elements which are programmatically named.
 
