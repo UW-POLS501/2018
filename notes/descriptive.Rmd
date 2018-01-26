@@ -40,6 +40,68 @@ a some summary statistics of the data rather than the original data itself, with
     
 ## Location
 
+How to think about statistics? 
+
+Claim - 
+
+$$
+mean(x) = \arg \min_m \sum_{i = 1}^n
+$$
+```{r}
+
+```
+
+
+We could show this via calculus.
+The minimum of 
+$$
+\sum_{i = 1}^n
+$$
+
+$$
+$$
+
+Consider the average salary dataset from *How to Lie with Statistic*:
+```{r}
+library("tidyverse")
+data("average_salary", package = "datums")
+ggplot(average_salary, aes(x = salary)) + geom_dotplot(binwidth = 1)
+```
+
+```{r}
+summary(average_salary)
+```
+
+
+The mean of this is the number, $m$, that minimizes $\sum_i (x_i - m)^2$.
+Finding the minimum analytically with calculus allows us to both find the minimum of this function and prove it is unique.
+But to help understand the objective function we'll visualize it.
+For a given point $m$, calculate the total error. 
+Take the actual mean $m = 5.7$:
+```{r}
+m <- 5.7
+sum((average_salary$salary - m) ^ 2)
+```
+However, to show that it's.
+
+Since we'll reuse this code, let's write a function:
+```{r}
+squared_error <- function(m, x) {
+  sum((average_salary$salary - m) ^ 2)
+}
+squared_error(m, x)
+```
+
+
+```{r}
+possible_means <-
+  tibble(value = seq(min(average_salary$salary), max(average_salary$salary),
+                   by = 0.1),
+       err = NA)
+
+```
+
+
 
 ## Spread
 
