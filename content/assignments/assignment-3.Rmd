@@ -4,6 +4,6 @@ Draft:  true
 dateAssigned: 2018-01-23T16:30:00
 dateDue: 2018-01-30T16:30:00
 dateCorrectionsDue: 2018-02-06T16:30:00
-assignmentURL: https://github.com/UW-POLS501/2018-assignment-3
+assignmentURL: https://github.com/UW-POLS501/POLS-501-2018-assignment-3
 solutionsURL: https://github.com/UW-POLS501/2018-assignment-3-solutions
 ---
