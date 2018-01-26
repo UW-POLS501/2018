@@ -97,9 +97,21 @@ squared_error(m, x)
 possible_means <-
   tibble(value = seq(min(average_salary$salary), max(average_salary$salary),
                    by = 0.1),
-       err = NA)
+         err = NA)
+
+for (i in seq_len(nrow(possible_means))) {
+  possible_means[["err"]][[i]] <- squared_error(possible_means[["value"]][[i]],
+                                                average_salary$salary)
+}
 
 ```
+
+We can plot the error function:
+```{r}
+ggplot(possible_means, aes(x = value, y = err)) +
+  geom_line()
+```
+and we can plot the 
 
 
 
