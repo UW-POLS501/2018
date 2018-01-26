@@ -87,9 +87,9 @@ However, to show that it's.
 Since we'll reuse this code, let's write a function:
 ```{r}
 squared_error <- function(m, x) {
-  sum((average_salary$salary - m) ^ 2)
+  sum((x - m) ^ 2)
 }
-squared_error(m, x)
+squared_error(m, average_salary$salary)
 ```
 
 
@@ -97,25 +97,117 @@ squared_error(m, x)
 possible_means <-
   tibble(value = seq(min(average_salary$salary), max(average_salary$salary),
                    by = 0.1),
-         err = NA)
+         loss = NA)
 
 for (i in seq_len(nrow(possible_means))) {
-  possible_means[["err"]][[i]] <- squared_error(possible_means[["value"]][[i]],
+  possible_means[["loss"]][[i]] <- squared_error(possible_means[["value"]][[i]],
                                                 average_salary$salary)
 }
 
 ```
 
-We can plot the error function:
+The mean is the value with the minimum loss:
 ```{r}
-ggplot(possible_means, aes(x = value, y = err)) +
-  geom_line()
+min_loss <- filter(possible_means, loss == min(loss))
+min_loss
 ```
-and we can plot the 
+
+We can plot the loss for each possible value of the mean.
+```{r}
+ggplot() +
+  geom_line(data = possible_means, mapping = aes(x = value, y = loss)) +
+  geom_point(data = min_loss, aes(x = value, y = loss)) +
+  geom_text(data = min_loss, aes(x = value, y = loss + 1000, 
+                                 label = str_c("mean = ", value)), vjust = 0)
+```
+
+```{r}
+abs_error <- function(m, x) {
+  sum(abs(m - x))
+}
+```
 
 
+```{r}
+grid <-
+  tibble(value = seq(min(average_salary$salary), max(average_salary$salary),
+                   by = 0.1)) %>%
+  mutate(loss_mean = map_dbl(value, 
+                             ~ squared_error(.x, average_salary$salary)),
+         loss_median = map_dbl(value, 
+                             ~ abs_error(.x, average_salary$salary)))
+
+```
+
+The median is the value with the minimum loss:
+```{r}
+min_loss <- filter(grid, loss_median == min(loss_median))
+min_loss
+```
+
+We can plot the loss for each possible value of the mean.
+```{r}
+ggplot() +
+  geom_line(data = grid, mapping = aes(x = value, y = loss_median)) +
+  geom_line(data = grid, mapping = aes(x = value, y = sqrt(loss_mean)), colour = "blue") +
+  geom_point(data = min_loss, aes(x = value, y = loss_median)) +
+  geom_text(data = min_loss, aes(x = value, y = loss_median + 1000, 
+                                 label = str_c("mean = ", value)), vjust = 0)
+```
+
+
+- Multiply $x$ by a scalar, $a$. What is the mean of $a x$? 
+- Add a scalar $a$ to $x$. What is the mean of $a + x$?
+- Does $(mean(x))^ 2 = mean(x ^ 2)$ ? (This is called Jensen's Inequality)
+- Remove each observation, and then calculate the mean and median. Plot the 
+    distributions of each. What do you conclude about the sensitivity of the 
+    mean and median to the sample? 
+- Take some data, subtract the mean, calculate the sum of squares? 
+    How does it compare to the variance?
 
 ## Spread
 
+- Variance
+- Standard Deviation
+- Interquartile Range (IQR)
+
+### Exercises
+
+- What are loss functions that produce the variance and IQR?
+- Consider some data $x$
+
+    - Multiply $x$ by a scalar, $a$. What is the variance of $a x$?  What is
+        the standard deviation of $a x$?
+    - Add a scalar $a$ to $x$. What is the variance of $a + x$?
+    - Take some data, subtract the mean, calculate the sum of squares? 
+        How does it compare to the variance?
 
 ## Shape
+
+- Bar Plot
+- Histograms
+- Density Plots
+
+
+## Bivariate Summaries
+
+- Scatterplots
+- Hexplots
+- Contour plots  
+- 2D density plots
+- Covariance
+- Correlation
+- Nonparametric regression (e.g. loess)
+- Linear regression
+
+
+## Multivariate Summaries
+
+- Covariance / Correlation matrix
+- Multivariate regression
+- Clustering
+- PCA / Factor models
+- t-SNE
+
+
+
