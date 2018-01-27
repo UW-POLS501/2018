@@ -1,0 +1,201 @@
+---
+title: How to avoid copying and pasting code by using functions, for loops and functionals
+---
+
+One of the most important principles in writing software is "don't repeat yourself (DRY)".
+This module covers using functions, for-loops, and functionals to avoid copying and pasting code.
+
+In addition to this, see the the *R for Data Science* chapters [Functions](http://r4ds.had.co.nz/functions.html) a [Iteration](http://r4ds.had.co.nz/iteration.html) (for-loops and functions) for more detailed discussions of these concepts.
+
+
+## Setup {-} 
+
+Consider the example from QSS Exercise 1. Review the explanations and instructions for that question.
+```{r}
+# a QSS Exercise from Chapter 1.
+library("tidyverse")
+library("qss")
+
+data("Kenya", package = "qss")
+data("Sweden", package = "qss")
+data("World", package = "qss")
+```
+
+## Replacing Copy and Pasting Code with Functions
+
+On question asks you to calculate the CDR (crude death rate)
+```{r}
+# Let's write some code that works for Kenya
+Kenya %>%
+  group_by(period) %>%
+  summarize(CDR_data = sum(deaths) / sum(py.men + py.women))
+
+```
+
+Awesome! This code does what I want.
+
+But, it only works for Kenya, and I'd need to copy and paste it to work on the
+`Sweden` and `World` data frames.
+```{r}
+Sweden %>%
+  group_by(period) %>%
+  summarize(CDR_data = sum(deaths) / sum(py.men + py.women))
+
+World %>%
+  group_by(period) %>%
+  summarize(CDR_data = sum(deaths) / sum(py.men + py.women))
+```
+
+R4DS notes that I should write a function anytime I'm doing the same thing [3 or more times](http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function).
+
+So to generalize the previous code, consider what changes when copy and pasting
+this data.
+The only thing that changes is the specification of the input data frame: `Kenya`, 
+`Sweden`, or `World`. I could rewrite this code by creating a new variable `x`
+which I can assign to the input data frame I want to use.
+
+```{r}
+x <- Kenya
+# x <- Sweden
+# x <- World
+
+x %>%
+  group_by(period) %>%
+  summarize(CDR_data = sum(deaths) / sum(py.men + py.women))
+```
+
+This helps clarify the programming task, but isn't yet that useful because we would
+still have to copy and paste that code to run it in a script.
+
+However, now that we've written the code such that the input is a variable `x` and an expression
+of code using that variable `x`.
+We can take that previous code and encapsulate it in a function.
+```{r}
+CDR <- function(x) {
+  x %>%
+    group_by(period) %>%
+    summarize(CDR_data = sum(deaths) / sum(py.men + py.women))
+}
+```
+
+A function consists of there parts: `name`, `arguments` (inputs), and `body`.
+
+1. Functions are objects. You can assign them to variable names. `name` is the name you assign the function to. In this case, `CDR`.
+2. The `arguments` are names that are given to input values. 
+3. The `body` is the code that the function executes.
+
+Now we can run the `CDR` on Kenya, Sweden, and World:
+```{r}
+CDR(Kenya)
+```
+```{r}
+CDR(Sweden)
+```
+```{r}
+CDR(World)
+```
+
+## Repeating Inputs with For Loops
+
+In the previous section we still had to run the function `CDR` three times, once for each
+country. 
+While three countries is not terrible, this would be quite tedious if we had hundreds of countries.
+
+In this section, we'll reduce that redundancy using a for loop.
+
+### Lists
+
+The first step is to put those data frames in a list.
+```{r}
+countries <- list(KEN = Kenya, SWE = Sweden, WLD = World)
+```
+The names of the elements of the list are arbitrary, but were purposefully chosen 
+to be different than the names of the data frames to emphasize that they are arbitrary.
+
+The list `countries` has `r length(countries)` elements,
+```{r}
+length(countries)
+```
+with names
+```{r}
+names(countries)
+```
+
+To get an element from the list, use `[[` or `$` and reference the elements by name or index number:
+```{r}
+summary(countries$KEN)
+summary(countries[["SWE"]])
+summary(countries[[3]])
+```
+
+The for loop lets us run 
+```{r}
+for (x in countries) {
+  print(glimpse(x))
+  print(CDR(x))
+}
+```
+
+The for loop runs three times:
+
+1. Set `x = countries[[1]]`, and run `CDR(x)`
+2. Set `x = countries[[2]]`, and run `CDR(x)`
+3. Set `x = countries[[3]]`, and run `CDR(x)`
+
+However, while we've run `CDR` on each country we haven't saved the results to use anywhere.
+We'll make three changes to our code:
+
+1. Define an empty list `cdr_results` of the same length as `countries` to store the results
+2. Loop over the names of the countries instead of the values so we can name the elements of the results.
+3. Within the loop save the result to an element in `cdr_results`
+
+First, create an empty vector the same length as countries.
+```{r}
+cdr_results <- vector("list", length = length(countries))
+```
+```{r}
+cdr_results
+```
+
+Then,  loop over each country, running `CDR` on that country's data frame and saving 
+the results to an element of `countries`:
+```{r}
+for (i in names(countries)) {
+  cdr_results[[i]] <- CDR(countries[[i]])
+}
+```
+
+Now, `cdr_results` contains the results of running `CDR` on each of those data frames:
+```{r}
+cdr_results[["KEN"]]
+```
+```{r}
+cdr_results[["SWE"]]
+```
+```{r}
+cdr_results[["WLD"]]
+```
+
+
+## Replacing for loops with map functions
+
+One annoyance and possible place to make bugs in for loops is that we need to define
+a vector to store the results.
+This requires that we create the vector with the correct length, and remember to 
+update the same vector.
+
+The map functions in the **purr** package are functions that apply a function to each
+element of a vector.
+
+The function `map(.x, .f)` applies the function `.f` to each element of the vector `.x`.
+The result is
+```
+list(.f(.x[[1]]), .f(.x[[2]]), ..., .f(.x[[length(.x)]]))
+```
+
+Using the `map` function  we can replace the previous for loop with a single line of code:
+```{r}
+map(countries, CDR)
+```
+This applied the function `CDR` to each data frame in the `countries` list and returned another list
+with all the results. Unlike using a for loop we did not need to first create an empty vector.
