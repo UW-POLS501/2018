@@ -11,7 +11,7 @@
     <h3>Week {{ .week }}</h3>
 
     {{ range .classes }}
-      <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>Class</small></h5>
+      <h5>{{ dateFormat "Monday, Jan 2, 2006" .date }} <small>{{ if .lab }}Lab{{ end }}</small></h5>
       <p>{{ if .description }} {{- .description | markdownify -}} {{ end }}</p>
       {{ if .readings }}
         <p>
@@ -20,6 +20,16 @@
             {{ range .readings }}
               <li>{{- . | markdownify -}}</li>
             {{- end -}}
+          </ul>
+        </p>
+      {{ end }}
+      {{ if .inClass }}
+        <p>
+          <strong>In class:</strong>
+          <ul>
+            {{ range .inClass }}
+              <li>{{- . | markdownify -}}</li>
+            {{ end }}
           </ul>
         </p>
       {{ end }}
