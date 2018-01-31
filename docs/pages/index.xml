@@ -65,6 +65,18 @@ Relationship between GitHub and Local Git Projects  References  Jenny Bryan, Hap
     </item>
     
     <item>
+      <title>How to avoid copying and pasting code by using functions, for loops and functionals</title>
+      <link>/2018/pages/functions_and_iteration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/pages/functions_and_iteration/</guid>
+      <description>One of the most important principles in writing software is “don’t repeat yourself (DRY)”. This module covers using functions, for-loops, and functionals to avoid copying and pasting code.
+In addition to this, see the the R for Data Science chapters Functions a Iteration (for-loops and functions) for more detailed discussions of these concepts.
+Setup Consider the example from QSS Exercise 1. Review the explanations and instructions for that question.
+# a QSS Exercise from Chapter 1.</description>
+    </item>
+    
+    <item>
       <title>Installing R</title>
       <link>/2018/pages/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -58,14 +58,13 @@ $$
 \sum_{i = 1}^n
 $$
 
-$$
-$$
 
 Consider the average salary dataset from *How to Lie with Statistic*:
 ```{r}
 library("tidyverse")
 data("average_salary", package = "datums")
-ggplot(average_salary, aes(x = salary)) + geom_dotplot(binwidth = 1)
+ggplot(average_salary, aes(x = salary)) +
+  geom_dotplot(binwidth = 1)
 ```
 
 ```{r}
@@ -94,7 +93,7 @@ squared_error(m, average_salary$salary)
 
 
 ```{r}
-possible_means <-
+grid <-
   tibble(value = seq(min(average_salary$salary), max(average_salary$salary),
                    by = 0.1),
          loss = NA)

@@ -6,7 +6,7 @@ weeks:
   - week: 1
     classes:
     - date: '2018-01-05'
-      type: lab
+      lab: true
       readings:
       - >-
         *QSS* Ch 1. "Introduction"' and [QSS Tidy](https://jrnold.github.io/qss-tidy) "[Chapter 1](https://jrnold.github.io/qss-tidy/introduction.html)"
@@ -22,7 +22,7 @@ weeks:
   - week: 2
     classes:
     - date: '2018-01-09'
-      type: class
+      lab: false
       readings:
       - >-
         *QSS* Ch 2. "Causality" and [QSS Tidy](https://jrnold.github.io/qss-tidy) "[Chapter 2](https://jrnold.github.io/qss-tidy/causality.html)"
@@ -33,7 +33,7 @@ weeks:
       after: []
 
     - date: '2018-01-12'
-      type: lab
+      lab: true
       readings:
       - >-
         *R4DS* Ch. 5. "[Data Transformation](http://r4ds.had.co.nz/transform.html)"
@@ -47,13 +47,13 @@ weeks:
       
   - week: 3
     classes:
-    - type: class
+    - lab: false
       date: '2018-01-16'
       readings: 
       - EGAP, [10 Things to Know About Causal Inference](http://egap.org/methods-guides/10-things-you-need-know-about-causal-inference).
       - EGAP, [http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y](http://egap.org/methods-guides/10-strategies-figuring-out-if-x-caused-y)
       description: "Data wrangling and Causal Inference review"
-    - type: lab
+    - lab: true
       date: '2018-01-19'
       readings:
       - '*R4DS* Ch. 11 "[Data Import](http://r4ds.had.co.nz/data-import.html)"'
@@ -65,14 +65,14 @@ weeks:
         *R4DS* Ch. 16. "[Dates and Times](http://r4ds.had.co.nz/dates-and-times.html)" (skim)
       description: "Data wrangling"
       
-    - type: lab
+    - lab: true
       date: '2018-01-19'
       readings: []
       description: ""
       
   - week: 4
     classes:
-    - type: class
+    - lab: false
       date: '2018-01-23'
       readings:
       - >-
@@ -87,19 +87,22 @@ weeks:
       - Gelman, Andrew. "[Modern polling needs innovation, not traditionalism](https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/04/modern-polling-requires-both-sampling-and-adjustment). *Washington Post*, 2014-08-04"
       - Rothschild, David. "[All polls are non-probability to varying degrees](https://www.huffingtonpost.com/entry/all-polls-are-non-probability-to-varying-degrees_us_57d02931e4b0f831f70653ce). *Huffington Post*, 2016-09-07."
       description: "Measurement"
-    - type: lab
+    - lab: true
       date: '2018-01-26'
       readings: []
-      description: ""      
+      inClass:
+      - >-
+        [Functions and For Loops](pages/functions_and_iteration/)
+      description: ""
   - week: 5
     classes:
-    - type: class
+    - lab: false
       date: '2018-01-30'
       readings:
       - >-
         *QSS* Ch 4. "Prediction" and [QSS Tidy](https://jrnold.github.io/qss-tidy) "[Chapter 4](https://jrnold.github.io/qss-tidy/prediction.html)"
       description: "Prediction"
-    - type: lab
+    - lab: true
       date: '2018-02-02'
       description: ""
       readings:
@@ -109,31 +112,31 @@ weeks:
       - '*R4DS* Ch 25 "[Many Models](http://r4ds.had.co.nz/many-models.html)"'
   - week: 6
     classes:
-    - type: class
+    - lab: false
       date: '2018-02-06'
       readings:
       - >-
         *QSS* Ch 6. "Probability" and *QSS Tidy* "[Chapter 6](https://jrnold.github.io/qss-tidy/probability.html)"
       description: ""      
-    - type: lab
+    - lab: true
       date: '2018-02-09'
       readings: []
       description: ""      
   - week: 7
 
     classes:
-    - type: class
+    - lab: false
       date: '2018-02-13'
       readings: []
       description: "Probability"      
-    - type: lab
+    - lab: true
       date: '2018-02-16'
       readings: []      
       description: ""  
 
   - week: 8
     classes:
-    - type: class
+    - lab: false
       date: '2018-02-20'
       readings:
       - >-
@@ -141,14 +144,14 @@ weeks:
       - >-
         *QSS* Ch 7.2 "Hypothesis Testing" and [QSS Tidy](https://jrnold.github.io/qss-tidy/uncertainty.html#hypothesis-testing)
       description: "Inference, Estimation, Hypothesis testing"      
-    - type: lab
+    - lab: true
       date: '2018-02-23'
       readings: []
       description: ""
 
   - week: 9
     classes:
-    - type: class
+    - lab: false
       date: '2018-02-27'
       readings:
       - >-
@@ -156,17 +159,17 @@ weeks:
       - >- 
         Wasserstein, Ronald, and Nicole A. Lazar. 2016. "The ASA's Statement on $p$-Values: Context, Process, and Purpose" [DOI](https://doi.org/10.1080/00031305.2016.1154108)
       description: "Inference for the Linear Model"
-    - type: lab
+    - lab: true
       date: '2018-03-02'
       readings: []      
       description: ""      
   - week: 10
     classes:
-    - type: class
+    - lab: false
       date: '2018-03-06'
       readings: []      
       description: "Overflow. Working on projects"
-    - type: lab
+    - lab: true
       date: '2018-03-09'
       readings:
       - "*R4DS* Ch 28. Graphics for communication"
