@@ -27,6 +27,7 @@ ORG <- "UW-POLS501"
 GitHub team for students in this quarter's course:
 ```{r}
 STUDENT_TEAM <- "2018 students"
+
 ```
 ```{r}
 INSTRUCTOR_TEAM <- "2018 instructors"
