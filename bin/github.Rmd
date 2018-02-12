@@ -41,6 +41,7 @@ Instructors usernames. This could also be queried with the API.
 INSTRUCTORS <- c("jrnold", "calvinhgarner") 
 ```
 
+
 ## Get Team
 
 Get a team by name:
