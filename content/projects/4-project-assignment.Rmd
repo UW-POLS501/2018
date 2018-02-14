@@ -5,7 +5,7 @@ dateDue: 2018-02-20T16:30:00
 weight: 40
 ---
 
-Write this asisgnment in a file named `assignment-3.Rmd` in your repository. It may-be useful to copy material the previous assignment as a starting point since this should be viewed as a draft towards your final project.
+Write this asisgnment in a file named `data-analysis-2.Rmd` in your repository. It may-be useful to copy material the previous assignment as a starting point since this should be viewed as a draft towards your final project.
 
 To submit this assignment:
 
