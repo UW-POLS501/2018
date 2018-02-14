@@ -1,6 +1,44 @@
 ---
-title: "Data Analysis II (Model)"
-Draft:  true
+title: "Data Analysis 2"
+Draft:  false
 dateDue: 2018-02-20T16:30:00
 weight: 40
 ---
+
+Write this asisgnment in a file named `assignment-3.Rmd` in your repository. It may-be useful to copy material the previous assignment as a starting point since this should be viewed as a draft towards your final project.
+
+To submit this assignment:
+
+1. Open a pull request titled "Review Data Analysis 2"
+2. Assign it to @jrnold and @CalvinGarner
+2. See the instructions on what to include in the comment.
+
+
+## Instructions
+
+This assignment should be viewed as a step towards producing a final project. It is both a commitment device for you to work on the project 
+throughout the course, and an opportunity for you to get feedback and suggestions from the instructors in a manner that you can learn from and incorporate those suggestions into your project.
+
+The following questions are things that you should attempt to address in 
+this assignment.  However, research projects can progress at different paces due to variety of factors. Turn in this assignment on time, with 
+whatever you are able to do. Clearly and honestly describe any problems that you are having with your project. Problems are inevitable in a research project. Stating them here will provide the instructors the ability to work with you to address and overcome these problems.
+
+1. Rewrite your document to be flow like a data analysis. The document should be prose describing a research question and the steps you are taking to answer that research question along with code that is actually implementing those steps. Consult the examples of literate programming provided in Slack. 
+
+2. In this draft, things you should focus on are:
+
+    1. Clearly describing the data you are using. Do not simply load it and print it. Describe the relevant variables. Check for potential problems of (e.g. missing data) and note any unresolved problems in the data relevant to your analysis.  Provide any output, tables, and figures that are necessary for the reader to understand the data you will use to answer your research question.
+    
+    2. Propose and clearly state method which you will use to answer your research question. Questions to address include:
+    
+        - How will you operationalize the relevant variables? 
+    
+        - If a causal question: what is your identification strategy: randomization, regression discontinuity, before-and-after, diff-in-diff, or selection on observables? In general, consider how you are generating the counterfactual. Implement that method.
+        
+        - If your identification strategy is selection on observables: What variables are possible confounders? Do you have observable measures for them? Think of at least one possible confounder that you don’t have a measure for. 
+        
+        - If a predictive question: What is the predictive task? How are you assessing predictive performance?
+        
+        - If a descriptive question: What is being described? How does this improve on our previous understanding?
+        
+3. Address all points raised in previous comments. This may or may-not require making changes to your analysis and write-up. However, note and address all of these concerns in your comments.
