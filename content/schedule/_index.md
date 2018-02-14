@@ -14,9 +14,7 @@ weeks:
       - '*R4DS* Ch 3. "[Data Visualization](http://r4ds.had.co.nz/data-visualisation.html)"'      
       - '*R4DS* Ch 4. "[Workflow: basics](http://r4ds.had.co.nz/workflow-basics.html)"'
       - '*R4DS* Ch 5. "[Workflow: scripts](http://r4ds.had.co.nz/workflow-scripts.html)"'
-      readings:
-      - >-
-        *R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"
+      - '*R4DS* Ch 27 "[R Markdown](http://r4ds.had.co.nz/r-markdown.html)"'
       description: ""
 
   - week: 2
@@ -114,20 +112,21 @@ weeks:
     classes:
     - lab: false
       date: '2018-02-06'
-      readings:
-      - >-
-        *QSS* Ch 6. "Probability" and *QSS Tidy* "[Chapter 6](https://jrnold.github.io/qss-tidy/probability.html)"
-      description: ""      
+      readings: []
+      description: "Continue working on prediction"      
     - lab: true
       date: '2018-02-09'
       readings: []
-      description: ""      
+      description: ""
+      
   - week: 7
 
     classes:
     - lab: false
       date: '2018-02-13'
-      readings: []
+      readings:
+      - >-
+        *QSS* Ch 6. "Probability" and *QSS Tidy* "[Chapter 6](https://jrnold.github.io/qss-tidy/probability.html)"      
       description: "Probability"      
     - lab: true
       date: '2018-02-16'
