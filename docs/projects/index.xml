@@ -45,12 +45,14 @@ State your research question, and your expected research design to answer that q
     </item>
     
     <item>
-      <title>Data Analysis II (Model)</title>
+      <title>Data Analysis 2</title>
       <link>/2018/projects/4-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/projects/4-project-assignment/</guid>
-      <description></description>
+      <description>Write this asisgnment in a file named assignment-3.Rmd in your repository. It may-be useful to copy material the previous assignment as a starting point since this should be viewed as a draft towards your final project.
+To submit this assignment:
+Open a pull request titled “Review Data Analysis 2” Assign it to @jrnold and @CalvinGarner See the instructions on what to include in the comment.  Instructions This assignment should be viewed as a step towards producing a final project.</description>
     </item>
     
     <item>
