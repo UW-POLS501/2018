@@ -56,12 +56,15 @@ Open a pull request titled “Review Data Analysis 2” Assign it to @jrnold and
     </item>
     
     <item>
-      <title>Data Analysis III (Model Revisions)</title>
+      <title>Draft</title>
       <link>/2018/projects/5-project-assignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2018/projects/5-project-assignment/</guid>
-      <description></description>
+      <description>Address theoretical, data, and methodological issues from the previous data analysis assignments.
+At this stage, your data wrangling should be complete, and that section should be mostly written.
+In this draft you should make some attempt at analysis that answers your research question. Consider the following.
+Is it a causal question? What is the identification strategy? What assumptions are being made, and are they plausible? Is it a predictive question? How are your measuring predictive performance?</description>
     </item>
     
     <item>
@@ -80,6 +83,26 @@ Open a pull request titled “Review Data Analysis 2” Assign it to @jrnold and
       
       <guid>/2018/projects/final-project/</guid>
       <description>Details will be posted later.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/2018/projects/_book/instructions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/projects/_book/instructions/</guid>
+      <description>Proposal    1 Instructions 2 Proposal 2.1 Instructions      Proposal   Proposal  1 Instructions Add a Markdown or R Markdown file in your named doc/initial-proposal.md to your project repository. Answer the questions in the next section in that file. To submit the assignment,
+ Commit and push all changes GitHub Open an issue in your project repository Title it “Review Project Proposal II” Assign the issue to @jrnold and @calvinhgarner Submit the issue</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/2018/projects/_book/proposal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/projects/_book/proposal/</guid>
+      <description>Proposal    1 Instructions 2 Proposal 2.1 Instructions      Proposal   2 Proposal In one to two paragraphs propose a research project for this course. State your research question. Describe what data you will be using to address that question.
+Address any comments from the first proposal. What is your research question or puzzle? If you have a clear question: is it descriptive, predictive, or causal (or some combination of them).</description>
     </item>
     
   </channel>

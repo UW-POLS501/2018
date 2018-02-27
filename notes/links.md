@@ -7,3 +7,8 @@
     is an unusual document that provides evidence of research fraud in the Lacour and Green paper.
     However, note how it uses knitr and R to do so. The paper is making and argument,
     with points supported by figures and results, with the code that produced them also visible.
+- [Mapping the GDELT data and some russian protests too](https://www.r-bloggers.com/mapping-the-gdelt-data-and-some-russian-protests-too)
+
+Mathjax reference
+
+- https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference

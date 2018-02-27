@@ -1,6 +1,23 @@
 ---
-title: "Data Analysis III (Model Revisions)"
-Draft:  true
+title: "Draft"
+Draft:  false
 dateDue: 2018-03-06T16:30:00
 weight: 50
 ---
+
+Address theoretical, data, and methodological issues from the previous data analysis assignments.
+
+At this stage, your data wrangling should be complete, and that section should be mostly written.
+
+In this draft you should make some attempt at analysis that answers your research question.
+Consider the following.
+
+1. Is it a causal question? What is the identification strategy? What assumptions are being made, and are they plausible? 
+2. Is it a predictive question? How are your measuring predictive performance? Are the out-of-sample tests appropriate?
+3. Is it a descriptive question? Why are your measures appropriate?
+
+If due to data issues, you cannot run an analysis, clearly describe your plan. 
+Do your best to run some analysis. We will use next week to work on your projects. 
+Having something written, no matter how "imperfect", provides a basis for discussion and improvement.
+
+
