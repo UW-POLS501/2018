@@ -1,9 +1,78 @@
 ---
-title: "Final Product"
+title: "Project"
 Draft:  false
 dateDue: 2018-03-16T16:30:00-07:00
 weight: 100
 ---
 
-Details will be posted later.
 
+Answer a research question using the statistical and computational methods used in this course.
+It can be a descriptive, predictive, or causal question.
+What is important for this reports is that the question  and stated clearly, the methods and data used to answer the question are described clearly, and a discussion of why the methods and data used to answer the question are appropriate, and a discusison of th assumptions made by those methods and the limits of what we can learn from this research. 
+
+## Submission
+
+Open a new issue in your project repo, `UW-POLS501/username`, titled `Final Project Submission`. Assign it to `@jrnold`.
+
+## Format
+
+The format of the project is as a reproducible R markdown documentin your course github repository, e.g. `UW-POLS501/username`.
+All data and code necessary to reproduce the analyses presented in the paper must be provided. The data and analyses should be well documented and understandable to a reader. In particular, it should be clear how the code relates to the analyses presented in the paper. The analysis code must run and reproduce the analyses as presented in the paper. 
+
+You should have a file named `README.md` in the root of project with the following format:
+
+    # Title of your project
+    
+    A few lines about what is in the repository.
+    
+    # Dependencies
+    
+    Describe what steps someone would need to take in order to run your code.
+    This includes listing the packages you use, preferrably with the necessary code:
+    \`\`\`
+    packages_used <- c("tidyverse")
+    install.packages(packages_used)
+    \`\`\`
+    
+    Does the user need to download specific files not included in the repository in order to be able to replicate your analysis?
+    
+    
+    # Instructions
+    
+    After installing any dependencies, what should a user do to replicate your code.
+    
+    - What R scripts must be run in what order? 
+    - What R Markdown files should be knit? 
+    
+    This may be as simple as saying open up `somefile.Rmd` and knit.
+    
+    
+    # Organization
+    
+    Describe the organization of your project. 
+    
+    - What is in each directory? 
+    - What are the important files? 
+    
+    You should also delete any extraneous or unneeded files.
+
+
+## Content
+
+Your project should effectively combine prose, code, and results to answer a research question.
+
+- If a descriptive question: How do your methods measure something that wasn't obvious before?
+- If a predictive question: 
+
+    - How do you measure out-of-sample errors? Is is consistent with the predictions you would like to make?
+    - What is your out-of-sample error? How does your model compare with alternatives? 
+    
+- If a causal inference question:
+
+    - What research design are you using? What are the assumptions of this design?
+    - You are encouraged to use confidence intervals to present results, and discouraged from using p-values.
+    - You must discuss the magnitude (substantive signficance) of your results.
+
+- What are the properties of your sample? How generalizable is it?
+- What are the assumptions of your research design? How plausible are they? What would be needed to improve on your research design?
+- Use visualizations where possible to describe your results
