@@ -57,6 +57,14 @@ You should have a file named `README.md` in the root of project with the followi
     You should also delete any extraneous or unneeded files.
 
 
+Your R Markdown file MUST:
+
+- knit successfully
+- have chunk describing all libraries used near the top of the document
+- the output of `sessionInfo` at the end of the file
+- no extraneous error messages, warnings, or overly verbose output (e.g. printing 1,000 rows of a data frame).
+
+
 ## Content
 
 Your project should effectively combine prose, code, and results to answer a research question.
